@@ -1,0 +1,103 @@
+/* normal */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+/* bold */
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+/* logo */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+@import "./styles/reset.css";
+/* @import "../ReactParallaxTilt.scss"; */
+/* ==================================== */
+
+* {
+  font-family: "Quicksand", sans-serif !important;
+  letter-spacing: 0.5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  object-fit: cover;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: none !important;
+  background: linear-gradient(to right, #56ccf2, #2f80ed) !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-tabs .nav-link {
+  border: none !important;
+}
+
+.nav-item {
+  font-size: 1rem;
+}
+
+.MuiButton-root {
+  color: white !important;
+}
+.MuiInput-underline::before {
+  border-bottom: 3px solid aliceblue !important;
+}
+.MuiInput-underline::after {
+  border-bottom: 3px solid #2f80ed !important;
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+}
+
+.green-text {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela", sans-serif !important;
+  letter-spacing: 2px;
+}
+
+.pt-6 {
+  padding-top: 6rem !important;
+}
+.pb-6 {
+  padding-bottom: 6rem !important;
+}
+
+.chonburi-font {
+  font-family: "Varela", sans-serif !important;
+  letter-spacing: 2px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.App {
+  overflow: hidden;
+}
+.navbar-toggler-icon {
+  filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+  -webkit-filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+  -moz-filter: sepia(100%) brightness(118%) hue-rotate(177deg) saturate(334%)
+    contrast(71%) invert(100%);
+}
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1704px !important;
+  }
+}

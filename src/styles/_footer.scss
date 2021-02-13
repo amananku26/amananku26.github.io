@@ -1,0 +1,32 @@
+.footer {
+  background-image: url("../images/footer-bg.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100% !important;
+}
+
+.footer-info {
+  list-style: none;
+  color: white;
+  svg {
+    cursor: pointer;
+  }
+  li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      color: #2f80ed;
+    }
+  }
+}
+.footer-end {
+  color: white;
+}
+
+.footer-love-icon {
+  color: rgb(209, 38, 38);
+}

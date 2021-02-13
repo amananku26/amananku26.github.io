@@ -1,0 +1,48 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: #0b0d0e;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.logo {
+  font-size: 2rem;
+  font-family: "Monoton", cursive !important;
+  font-weight: bold;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  animation: hue 2s linear infinite;
+
+  &::before {
+    filter: blur(5px);
+  }
+  &::after {
+    filter: blur(15px);
+  }
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+}
+.nav {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-item {
+  color: white !important;
+  letter-spacing: 3px;
+  margin-right: 1rem;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    color: #2f80ed !important;
+  }
+}
