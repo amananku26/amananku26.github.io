@@ -1,7 +1,6 @@
 import React,{Component} from "react"
 import Feedback from "feeder-react-feedback"; // import Feedback component
 import "feeder-react-feedback/dist/feeder-react-feedback.css"; // import stylesheet
-import PropTypes from 'prop-types';
 
 
 class Feed extends Component {
