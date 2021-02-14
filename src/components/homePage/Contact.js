@@ -11,6 +11,7 @@ import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 
+
 const Contact = () => {
   const [element, controls] = useScroll();
   return (
@@ -117,6 +118,7 @@ const Contact = () => {
               </Button>
             </from>
           </Col> */}
+        
         </Row>
       </motion.div>
     </div>
