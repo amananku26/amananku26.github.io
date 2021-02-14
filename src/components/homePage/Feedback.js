@@ -11,7 +11,7 @@ class Feed extends Component {
 }
 Feedback.defaultProps = {
     email: true,
-    emailRequired: false,
+    emailRequired: true,
     emailDefaultValue: "",
     projectName: "",
     subProject: "",
