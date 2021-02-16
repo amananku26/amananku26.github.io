@@ -118,7 +118,7 @@ const Contact = () => {
               </Button>
             </from>
           </Col> */}
-        
+
         </Row>
       </motion.div>
     </div>
