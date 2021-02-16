@@ -49,10 +49,22 @@ const skills = [
     logo: "/images/skills/sass.png",
     name: "Sass",
   },
-  // {
-  //   logo: "/images/skills/postman.png",
-  //   name: "Postman",
-  // },
+  {
+    logo: "https://img.icons8.com/color/80/000000/nodejs.png",
+    name: "NodeJS",
+  },
+  {
+    logo: "https://kalvanaveen.github.io/WebDevelopmentResources.github.io/Images/Express-JS-min.png",
+    name: "ExpressJS",
+  },
+  {
+    logo: "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png",
+    name: "MongoDB",
+  },
+  {
+    logo: "/images/skills/postman.png",
+    name: "Postman",
+  },
 ];
 
 const Skills = () => {
