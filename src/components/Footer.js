@@ -62,7 +62,6 @@ const Footer = () => {
             Designed & Developed by{" "}
             <span className="chonburi-font green-text"> Aman Anku</span>
           </p>
-          <a href="sitemap.xml">Sitemap</a>
         </div>
       </div>
     </div>
