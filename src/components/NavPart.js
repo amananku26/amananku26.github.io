@@ -42,14 +42,14 @@ const NavPart = () => {
             >
               <div className="d-flex justify-content-between w-100">
                 <Nav.Link
-                  href="https://www.linkedin.com/in/deb-roy-97056415a/"
+                  href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
                   <LinkedInIcon />
                 </Nav.Link>
                 <Nav.Link
-                  href="https://github.com/DebRoy15"
+                  href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
