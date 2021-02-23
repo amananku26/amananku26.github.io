@@ -14,7 +14,8 @@ const myProjects = [
       "Tried to replicate WhatsApp UI, and some features also. - Can Create Groups - Can Switch B/w the groups - send messages to any groups Used Firebase for the databases",
     source: "https://github.com/amananku26/whatsapp-clone",
     demoLink: "https://whatsapp-clone-53d8c.web.app/rooms/QIPEvsdzwLBr8AcT1WVD",
-    badge:"ReactJS"
+    badge:"ReactJS",
+    liveweb:"https://www.youtube.com/watch?v=4DTHrXOLHnQ&t=52s"
   },
   {
     image: "/images/fbclone.jpg",
@@ -23,7 +24,8 @@ const myProjects = [
       "The aim of this project is to make a pixel-perfect clone of Facebook. I used the BEM naming Convention Used Firebase for the databases",
     source: "https://github.com/amananku26/Facebook-Clone",
     demoLink: "https://facebook-clone-ccd54.web.app/",
-    badge:"ReactJS"
+    badge:"ReactJS",
+    liveweb:"https://www.youtube.com/watch?v=_5Q8vTcpjhI"
   },
   {
     image: "/images/linkedclone.jpg",
@@ -32,7 +34,8 @@ const myProjects = [
       "This page is designed using HTML, CSS and Reactjs , redux , reduxthunk , json mocker User can upload post Like and comment on other post also.",
     source: "https://github.com/amananku26/Linkedin-Clone",
     demoLink: "https://linkedin-clone-a7ba5.web.app/",
-    badge:"ReactJS"
+    badge:"ReactJS",
+    liveweb:"https://www.youtube.com/watch?v=CA1xCJvSCw8&t=32s"
   },
   {
     image: "/images/invoice.png",
@@ -77,6 +80,11 @@ const Projects = () => {
                 <Badge pill variant="warning">
                   {project.badge}
                   </Badge>
+                {
+                  project.liveweb &&   <Badge pill variant="danger" >
+                     <a href={project.liveweb} target="_blank" style={{textDecoration:"none",color:'white'}}>Youtube</a>
+                      </Badge>
+                }
                   <div className="project-card">
                     <div className="img-section">
                       <img src={project.image} alt="" />
