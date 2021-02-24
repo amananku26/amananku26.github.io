@@ -35,6 +35,13 @@ const Footer = () => {
               >
                 <img height="25px" src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png" />
               </Nav.Link>
+              <Nav.Link
+                href="https://medium.com/@amananku"
+                className="nav-item cursor-pointer"
+                target="_blank"
+              >
+                <img height="25px" src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png" />
+              </Nav.Link>
             </div>
           </Col>
           <Col md={5} xs={12}>
