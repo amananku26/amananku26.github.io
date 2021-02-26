@@ -62,8 +62,8 @@ const skills = [
     name: "MongoDB",
   },
   {
-    logo: "/images/skills/postman.png",
-    name: "Postman",
+    logo: "https://a.slack-edge.com/95b9/img/services/sentry_512.png",
+    name: "Sentry.io",
   },
 ];
 

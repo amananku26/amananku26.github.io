@@ -5,6 +5,13 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import Overlay from 'react-bootstrap/Overlay'
+
+// const renderTooltip = (props) => (
+//   <Tooltip id="button-tooltip" {...props}>
+//     Simple tooltip
+//   </Tooltip>
+// )
 
 const NavPart = () => {
   return (
@@ -41,6 +48,7 @@ const NavPart = () => {
               }`}
             >
               <div className="d-flex justify-content-between w-100">
+  //          
                 <Nav.Link
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
@@ -48,6 +56,8 @@ const NavPart = () => {
                 >
                   <LinkedInIcon />
                 </Nav.Link>
+
+
                 <Nav.Link
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
