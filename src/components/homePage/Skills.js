@@ -65,6 +65,10 @@ const skills = [
     logo: "https://a.slack-edge.com/95b9/img/services/sentry_512.png",
     name: "Sentry.io",
   },
+  {
+    logo: "https://gblobscdn.gitbook.com/spaces%2F-L9iS6WpW81N7RGRTQ-K%2Favatar.png?alt=media",
+    name: "i18next",
+  },
 ];
 
 const Skills = () => {
