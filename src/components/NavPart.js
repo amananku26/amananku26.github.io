@@ -5,7 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import Overlay from 'react-bootstrap/Overlay'
+import Overlay from "react-bootstrap/Overlay";
 
 // const renderTooltip = (props) => (
 //   <Tooltip id="button-tooltip" {...props}>
@@ -48,16 +48,17 @@ const NavPart = () => {
               }`}
             >
               <div className="d-flex justify-content-between w-100">
-  //
+                //
                 <Nav.Link
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
-                  <LinkedInIcon />
+                 <img
+                    height="25px"
+                    src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
+                  />
                 </Nav.Link>
-
-
                 <Nav.Link
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
@@ -70,21 +71,30 @@ const NavPart = () => {
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
-                  <img height="25px" src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png" />
+                  <img
+                    height="25px"
+                    src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png"
+                  />
                 </Nav.Link>
                 <Nav.Link
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
-                  <img height="25px" src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png" />
+                  <img
+                    height="25px"
+                    src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png"
+                  />
                 </Nav.Link>
                 <Nav.Link
                   href="https://www.youtube.com/c/AmanAnku"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
-                  <img height="25px" src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif" />
+                  <img
+                    height="25px"
+                    src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif"
+                  />
                 </Nav.Link>
                 {/* <Nav.Link href="#contact" className="nav-item cursor-pointer">
                   <TwitterIcon />

@@ -19,7 +19,10 @@ const Footer = () => {
                 className="nav-item cursor-pointer"
                 target="_blank"
               >
-                <LinkedInIcon />
+                  <img
+                    height="25px"
+                    src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
+                  />
               </Nav.Link>
               <Nav.Link
                 href="https://github.com/amananku26"
