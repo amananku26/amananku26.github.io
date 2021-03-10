@@ -8,14 +8,17 @@ const skills = [
   {
     logo: "/images/skills/html.png",
     name: "Html",
+    link:"https://www.w3schools.com/html/"
   },
   {
     logo: "/images/skills/css-3.png",
     name: "Css",
+    link:"https://www.w3schools.com/css/"
   },
   {
     logo: "/images/skills/js.png",
     name: "Javascript",
+    link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   // {
   //   logo: "/images/skills/java.png",
@@ -28,46 +31,57 @@ const skills = [
   {
     logo: "/images/skills/git-logo.png",
     name: "Git",
+    link:"https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
   },
   {
     logo: "/images/skills/bootstrap.png",
     name: "Bootstrap",
+    link:"https://react-bootstrap.github.io/getting-started/introduction/"
   },
   {
     logo: "/images/skills/logo.png",
     name: "Material UI",
+    link:"https://material-ui.com/"
   },
   {
     logo: "/images/skills/react.png",
     name: "React",
+    link:"https://reactjs.org/"
   },
   {
     logo: "/images/skills/redux.png",
     name: "Redux/Redux-thunk/Redux-Saga",
+    link:"https://redux.js.org/"
   },
   {
     logo: "/images/skills/sass.png",
     name: "Sass",
+    link:"https://sass-lang.com/"
   },
   {
     logo: "https://img.icons8.com/color/80/000000/nodejs.png",
     name: "NodeJS",
+    link:"https://nodejs.org/en/docs/"
   },
   {
     logo: "https://kalvanaveen.github.io/WebDevelopmentResources.github.io/Images/Express-JS-min.png",
     name: "ExpressJS",
+    link:"https://expressjs.com/"
   },
   {
     logo: "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png",
     name: "MongoDB",
+    link:"https://docs.mongodb.com/"
   },
   {
     logo: "https://a.slack-edge.com/95b9/img/services/sentry_512.png",
     name: "Sentry.io",
+    link:"https://docs.sentry.io/"
   },
   {
     logo: "https://gblobscdn.gitbook.com/spaces%2F-L9iS6WpW81N7RGRTQ-K%2Favatar.png?alt=media",
     name: "i18next",
+    link:"https://www.i18next.com/"
   },
 ];
 
@@ -92,7 +106,8 @@ const Skills = () => {
               <Col>
                 <div className="skills">
                   <img src={skill.logo} alt="" />
-                  <h6>{skill.name}</h6>
+                  <a href={skill.link} target="_blank"> <h6>{skill.name}</h6> </a>
+                 
                 </div>
               </Col>
             );
