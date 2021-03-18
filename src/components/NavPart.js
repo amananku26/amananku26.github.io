@@ -96,6 +96,16 @@ const NavPart = () => {
                     src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif"
                   />
                 </Nav.Link>
+                <Nav.Link
+                  href="https://stackoverflow.com/users/14988771/aman-anku"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                >
+                  <img
+                    height="25px"
+                    src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-512.png"
+                  />
+                </Nav.Link>
                 {/* <Nav.Link href="#contact" className="nav-item cursor-pointer">
                   <TwitterIcon />
                 </Nav.Link> */}
