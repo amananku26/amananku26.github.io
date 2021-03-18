@@ -19,10 +19,10 @@ const Footer = () => {
                 className="nav-item cursor-pointer"
                 target="_blank"
               >
-                  <img
-                    height="25px"
-                    src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
-                  />
+                <img
+                  height="25px"
+                  src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
+                />
               </Nav.Link>
               <Nav.Link
                 href="https://github.com/amananku26"
@@ -36,24 +36,41 @@ const Footer = () => {
                 className="nav-item cursor-pointer"
                 target="_blank"
               >
-                <img height="25px" src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png" />
+                <img
+                  height="25px"
+                  src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png"
+                />
               </Nav.Link>
               <Nav.Link
                 href="https://medium.com/@amananku"
                 className="nav-item cursor-pointer"
                 target="_blank"
               >
-                <img height="25px" src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png" />
+                <img
+                  height="25px"
+                  src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png"
+                />
               </Nav.Link>
               <Nav.Link
                 href="https://www.youtube.com/c/AmanAnku"
                 className="nav-item cursor-pointer"
                 target="_blank"
               >
-                <img height="25px" src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif" />
+                <img
+                  height="25px"
+                  src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif"
+                />
               </Nav.Link>
-
-
+              <Nav.Link
+                href="https://stackoverflow.com/users/14988771/aman-anku"
+                className="nav-item cursor-pointer"
+                target="_blank"
+              >
+                <img
+                  height="25px"
+                  src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-512.png"
+                />
+              </Nav.Link>
             </div>
           </Col>
           <Col md={5} xs={12}>
