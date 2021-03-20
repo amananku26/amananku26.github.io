@@ -1,7 +1,7 @@
 import React,{Component} from "react"
 import Feedback from "feeder-react-feedback"; // import Feedback component
 import "feeder-react-feedback/dist/feeder-react-feedback.css"; // import stylesheet
-
+import "./Feeder.css"
 
 class Feed extends Component {
   render() {
@@ -20,7 +20,7 @@ Feedback.defaultProps = {
     postSubmitButtonMsg: "Thanks!",
     submitButtonMsg: "Send Feedback",
     feedbackTypes: ["general", "bug", "idea"],
-    zIndex: "100000000",
+    zIndex: "100000000"
   };
 
 export default Feed

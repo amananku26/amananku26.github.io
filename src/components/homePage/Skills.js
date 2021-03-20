@@ -106,7 +106,7 @@ const Skills = () => {
               <Col>
                 <div className="skills">
                   <img src={skill.logo} alt="" />
-                  <a href={skill.link} target="_blank"> <h6>{skill.name}</h6> </a>
+                  <a href={skill.link} target="_blank" rel="noreferrer"> <h6>{skill.name}</h6> </a>
                  
                 </div>
               </Col>

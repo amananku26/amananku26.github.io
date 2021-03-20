@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import CodersRankActivity from '@codersrank/activity';
