@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core";
+// import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
@@ -83,7 +83,7 @@ const Projects = () => {
                   </Badge>
                 {
                   project.liveweb &&   <Badge pill variant="danger" >
-                     <a href={project.liveweb} target="_blank" style={{textDecoration:"none",color:'white'}}>Youtube</a>
+                     <a href={project.liveweb} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:'white'}}>Youtube</a>
                       </Badge>
                 }
                   <div className="project-card">

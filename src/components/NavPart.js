@@ -1,11 +1,11 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "../styles/_nav.scss";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
+// import LinkedInIcon from "@material-ui/icons/LinkedIn";
+// import TwitterIcon from "@material-ui/icons/Twitter";
+// import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import Overlay from "react-bootstrap/Overlay";
+// import Overlay from "react-bootstrap/Overlay";
 
 // const renderTooltip = (props) => (
 //   <Tooltip id="button-tooltip" {...props}>
@@ -48,14 +48,14 @@ const NavPart = () => {
               }`}
             >
               <div className="d-flex justify-content-between w-100">
-                //
                 <Nav.Link
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
-                 <img
+                  <img
                     height="25px"
+                    alt="icon"
                     src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
                   />
                 </Nav.Link>
@@ -74,6 +74,7 @@ const NavPart = () => {
                   <img
                     height="25px"
                     src="https://1.bp.blogspot.com/-ULT9oDhqr24/XJYCrttOEpI/AAAAAAAAJYE/inXHXlzblBI3SbcGpiUj4TMNj-E8uPlaQCK4BGAYYCw/s1600/logo%2Bhackerrank%2Bicon.png"
+                    alt="icon"
                   />
                 </Nav.Link>
                 <Nav.Link
@@ -84,6 +85,7 @@ const NavPart = () => {
                   <img
                     height="25px"
                     src="https://icons-for-free.com/iconfiles/png/512/media+medium+social+icon-1320086141126884384.png"
+                    alt="icon"
                   />
                 </Nav.Link>
                 <Nav.Link
@@ -94,6 +96,7 @@ const NavPart = () => {
                   <img
                     height="25px"
                     src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif"
+                    alt="icon"
                   />
                 </Nav.Link>
                 <Nav.Link
@@ -104,6 +107,7 @@ const NavPart = () => {
                   <img
                     height="25px"
                     src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-512.png"
+                    alt="icon"
                   />
                 </Nav.Link>
                 {/* <Nav.Link href="#contact" className="nav-item cursor-pointer">
