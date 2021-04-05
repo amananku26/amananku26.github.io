@@ -180,16 +180,13 @@
   }
 }
 .about-sub-data {
-  padding: 1rem;
-  border-radius: 1rem;
-  background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-color: black;
-  box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
-  -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 // -------------------------------------------------
@@ -235,10 +232,14 @@ color: black;
   position: relative;
   overflow: hidden;
   background: #2f81ed3f;
-  background: linear-gradient(to right, #56cbf23f, #2f81ed3f);
   box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
+  background: rgba(191, 191, 191, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -361,8 +362,13 @@ color: black;
 }
 
 .project-card-btn {
+  background: rgba(144, 19, 254, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   position: relative;
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
   padding: 5px 10px;
   border-radius: 5px;
   color: white;
