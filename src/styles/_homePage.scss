@@ -237,8 +237,8 @@
   -moz-box-shadow: 1px 2px 17px 0px rgba(0, 0, 0, 0.18);
   background: rgba(191, 191, 191, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
+  // backdrop-filter: blur(11.5px);
+  // -webkit-backdrop-filter: blur(11.5px);
   border-radius: 10px;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -363,9 +363,12 @@
 
 .project-card-btn {
   background: rgba(144, 19, 254, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
+  // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  // backdrop-filter: blur(11.5px);
+  box-shadow: 
+  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  -3px -3px 12px 0 rgba(255, 255, 255, 0.3);
+  // -webkit-backdrop-filter: blur(11.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: relative;
