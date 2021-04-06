@@ -31,7 +31,7 @@ const About = () => {
               <h1 className="pb-4">
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
-              <p className="">
+              <p className="details">
                 Software Developer at Swedish company Frescano info tech Pvt Lmt. I
                 have experience in the backend and frontend development. Interested in devising a better
                 problem‑solving method for challenging tasks, and learning new
