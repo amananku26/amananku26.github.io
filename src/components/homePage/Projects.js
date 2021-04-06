@@ -78,11 +78,11 @@ const Projects = () => {
             {myProjects.map((project) => {
               return (
                 <Col md={4} className="mb-5">
-                <Badge pill variant="warning">
+                <Badge className="lmckdncd" pill variant="warning">
                   {project.badge}
                   </Badge>
                 {
-                  project.liveweb &&   <Badge pill variant="danger" >
+                  project.liveweb &&   <Badge className="jdnkcjd" pill variant="danger" >
                      <a href={project.liveweb} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:'white'}}>Youtube</a>
                       </Badge>
                 }
