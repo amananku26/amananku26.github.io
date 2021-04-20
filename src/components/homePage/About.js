@@ -32,7 +32,7 @@ const About = () => {
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
               <p className="details">
-                Software Developer at Swedish company Frescano info tech Pvt Lmt. I
+                Software Developer at Swedish company Nextory Private Limited (Formerly Known as frescano infoTech Pvt Lmt) .  I
                 have experience in the backend and frontend development. Interested in devising a better
                 problem‑solving method for challenging tasks, and learning new
                 technologies and tools if the need arises.
@@ -73,7 +73,7 @@ const About = () => {
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
-                      <h5>Frescano Info Tech Pvt Lmt</h5>
+                      <h5>Nextory Private Limited</h5>
                       <ul>
                         <li>
                           Working As a Frontend Developer
