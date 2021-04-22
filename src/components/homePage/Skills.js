@@ -49,6 +49,11 @@ const skills = [
     link:"https://reactjs.org/"
   },
   {
+    logo: "https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg",
+    name: "NextJS",
+    link:"https://nextjs.org/"
+  },
+  {
     logo: "/images/skills/redux.png",
     name: "Redux/Redux-thunk/Redux-Saga",
     link:"https://redux.js.org/"
