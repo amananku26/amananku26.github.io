@@ -49,7 +49,7 @@ const skills = [
     link:"https://reactjs.org/"
   },
   {
-    logo: "https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg",
+    logo: "https://images.ctfassets.net/23aumh6u8s0i/c04wENP3FnbevwdWzrePs/1e2739fa6d0aa5192cf89599e009da4e/nextjs",
     name: "NextJS",
     link:"https://nextjs.org/"
   },
