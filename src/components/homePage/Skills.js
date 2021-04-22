@@ -45,7 +45,7 @@ const skills = [
   },
   {
     logo: "/images/skills/react.png",
-    name: "React",
+    name: "ReactJS",
     link:"https://reactjs.org/"
   },
   {
