@@ -5,6 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import Badge from 'react-bootstrap/Badge'
+import Img from 'react-cool-img';
 
 const myProjects = [
   {
@@ -88,7 +89,12 @@ const Projects = () => {
                 }
                   <div className="project-card">
                     <div className="img-section">
-                      <img src={project.image} alt="" />
+                    <Img
+                      placeholder="/images/loading.jpeg"
+                      src={project.image}
+                       error="/images/download.png"
+                       alt="React Cool Img"
+                      />
                       <div className="imageCardEffect"></div>
                     </div>
                     <div className="project-info">
