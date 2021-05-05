@@ -56,7 +56,7 @@ const NavPart = () => {
                   <img
                     height="25px"
                     alt="icon"
-                    src="https://i.pinimg.com/originals/de/b4/6f/deb46f02a59e3b3a2aa58fac16290d63.gif"
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png"
                   />
                 </Nav.Link>
                 <Nav.Link
