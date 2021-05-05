@@ -90,7 +90,7 @@ const Projects = () => {
                   <div className="project-card">
                     <div className="img-section">
                     <Img
-                      placeholder="/images/loading.jpeg"
+                      placeholder="/images/loading.gif"
                       src={project.image}
                        error="/images/download.png"
                        alt="React Cool Img"
