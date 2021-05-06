@@ -76,9 +76,9 @@ const Projects = () => {
         </div>
         <div className="projects-cards">
           <Row className="justify-content-center">
-            {myProjects.map((project) => {
+            {myProjects.map((project,index) => {
               return (
-                <Col md={4} className="mb-5">
+                <Col md={4} className="mb-5" key={index+1}>
                 <Badge className="lmckdncd" pill variant="warning">
                   {project.badge}
                   </Badge>

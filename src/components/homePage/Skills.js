@@ -106,9 +106,9 @@ const Skills = () => {
           </h1>
         </div>
         <Row>
-          {skills.map((skill) => {
+          {skills.map((skill,index) => {
             return (
-              <Col>
+              <Col key={index+1}>
                 <div className="skills">
                   <img src={skill.logo} alt="" />
                   <a href={skill.link} target="_blank" rel="noreferrer"> <h6>{skill.name}</h6> </a>
