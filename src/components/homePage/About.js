@@ -11,6 +11,10 @@ import { motion } from "framer-motion";
 const About = () => {
   const [tab, setTab] = useState("experience");
   const [element, controls] = useScroll();
+  
+  const methodDoesNotExist = (aman) => {
+    throw new Error("this is a sentry error")
+   }
 
   return (
     <motion.div id="about" className="about pb-6 pt-6">
@@ -29,6 +33,7 @@ const About = () => {
             src="/images/me.jpeg"
             error="/images/skills/error.png"
             alt="React Cool Img"
+            onClick={methodDoesNotExist}
           />
           </Col>
           <Col className="" md={7}>
