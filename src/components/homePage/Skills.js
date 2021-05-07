@@ -3,6 +3,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
+import Img from 'react-cool-img';
 
 const skills = [
   {
@@ -20,14 +21,6 @@ const skills = [
     name: "Javascript",
     link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
-  // {
-  //   logo: "/images/skills/java.png",
-  //   name: "Java",
-  // },
-  // {
-  //   logo: "/images/skills/c-sharp.png",
-  //   name: "C#",
-  // },
   {
     logo: "/images/skills/git-logo.png",
     name: "Git",
@@ -49,7 +42,7 @@ const skills = [
     link:"https://reactjs.org/"
   },
   {
-    logo: "https://images.ctfassets.net/23aumh6u8s0i/c04wENP3FnbevwdWzrePs/1e2739fa6d0aa5192cf89599e009da4e/nextjs",
+    logo: "/images/skills/nextjs.png",
     name: "NextJS",
     link:"https://nextjs.org/"
   },
@@ -64,27 +57,27 @@ const skills = [
     link:"https://sass-lang.com/"
   },
   {
-    logo: "https://img.icons8.com/color/80/000000/nodejs.png",
+    logo: "/images/skills/node.jpeg",
     name: "NodeJS",
     link:"https://nodejs.org/en/docs/"
   },
   {
-    logo: "https://kalvanaveen.github.io/WebDevelopmentResources.github.io/Images/Express-JS-min.png",
+    logo: "/images/skills/ex.jpg",
     name: "ExpressJS",
     link:"https://expressjs.com/"
   },
   {
-    logo: "https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png",
+    logo: "/images/skills/db.png",
     name: "MongoDB",
     link:"https://docs.mongodb.com/"
   },
   {
-    logo: "https://a.slack-edge.com/95b9/img/services/sentry_512.png",
+    logo: "/images/skills/sentry.png",
     name: "Sentry.io",
     link:"https://docs.sentry.io/"
   },
   {
-    logo: "https://gblobscdn.gitbook.com/spaces%2F-L9iS6WpW81N7RGRTQ-K%2Favatar.png?alt=media",
+    logo: "/images/skills/i18.png",
     name: "i18next",
     link:"https://www.i18next.com/"
   },
@@ -110,7 +103,12 @@ const Skills = () => {
             return (
               <Col key={index+1}>
                 <div className="skills">
-                  <img src={skill.logo} alt="" />
+                <Img
+                  placeholder="/images/skills/lod.jpeg"
+                  src={skill.logo}
+                  error="/images/skills/error.png"
+                  alt="React Cool Img"
+                />
                   <a href={skill.link} target="_blank" rel="noreferrer"> <h6>{skill.name}</h6> </a>
                  
                 </div>

@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import WorkIcon from "@material-ui/icons/Work";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 import SkillSvg from "../../images/about-shape.svg";
-
+import Img from 'react-cool-img';
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import { motion } from "framer-motion";
@@ -24,7 +24,12 @@ const About = () => {
       >
         <Row className="">
           <Col className="p-0 text-center" md={5}>
-            <img className="about-img" src="https://avatars.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" alt="profile_pic" />
+          <Img
+            placeholder="/images/skills/lod.jpeg"
+            src="/images/me.jpeg"
+            error="/images/skills/error.png"
+            alt="React Cool Img"
+          />
           </Col>
           <Col className="" md={7}>
             <div className="about-info">
