@@ -4,14 +4,10 @@ import { Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import CodersRankActivity from '@codersrank/activity';
-// import CodersrankSummary from '@codersrank/summary';
 
-// register web component as <codersrank-summary> element
-// window.customElements.define('codersrank-summary', CodersrankSummary);
 window.customElements.define('codersrank-activity', CodersRankActivity);
 const GitHub = () => {
-  const [element, controls] = useScroll();
-//   
+  const [element, controls] = useScroll();  
   return (
     <div id="skills" className="skills-section">
       <motion.div
@@ -29,7 +25,6 @@ const GitHub = () => {
         <codersrank-activity username="amananku26"></codersrank-activity>
         </Row>
         <Row>
-        {/* <codersrank-summary username="amananku26"></codersrank-summary> */}
         </Row>
       </motion.div>
     </div>
