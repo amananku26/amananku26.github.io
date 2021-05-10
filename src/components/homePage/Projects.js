@@ -57,6 +57,15 @@ const myProjects = [
     badge:"ReactJS",
     liveweb:"https://www.youtube.com/watch?v=ukYdUnHidq8"
   },
+  {
+    image: "/images/covid.png",
+    title: "Covid Vaccine Slot Availability",
+    description:
+      "User can Get the Detail of Availability of Slots of Vaccine on one click",
+    source: "https://github.com/amananku26/covidSaharsa",
+    demoLink: "https://covidsaharsa.netlify.app/",
+    badge:"ReactJS",
+  }
 ];
 
 const Projects = () => {
