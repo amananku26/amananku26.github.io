@@ -30,10 +30,11 @@ const About = () => {
           <Col className="p-0 text-center" md={5}>
           <Img
             placeholder="/images/skills/lod.jpeg"
-            src="/images/me.jpeg"
+            src="/images/me1.png"
             error="/images/skills/error.png"
             alt="React Cool Img"
             onClick={methodDoesNotExist}
+            height="50%"
           />
           </Col>
           <Col className="" md={7}>
