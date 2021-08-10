@@ -11,7 +11,13 @@ const myProjects = [
   {
     image: "https://blog.masaischool.com/wp-content/uploads/2021/06/Aman-1024x441.jpg",
     title: "My Journey",
+    dLink:"Aman’s Never-Ending Dream Of Becoming A Coder Finally.........",
     demoLink: "https://blog.masaischool.com/amans-never-ending-dream-of-becoming-a-coder-finally-came-true-this-is-how/",
+  },
+  {
+    image: "https://assets.kpmg/content/dam/kpmg/gh/images/gh-award.jpg/jcr:content/renditions/original",
+    title: "SPOT AWARD MAY 2021 (Nextory Pvt Lmt)",
+    dLink: "Got the SPOT AWARD for the month of MAY 2021 at Nextory Pvt Lmt",
   }
 ];
 
@@ -49,7 +55,8 @@ const SocialProfiles = () => {
                       <h5 className="color-white font-weight-bold">
                         {project.title}
                       </h5>
-                      <div className="d-flex justify-content-between mr-4">
+                      <p className="color-white">{project.dLink}</p>
+                     {project.demoLink && <div className="d-flex justify-content-between mr-4">
                         <a
                           href={project.demoLink}
                           className="project-card-btn"
@@ -58,7 +65,7 @@ const SocialProfiles = () => {
                         >
                           Read ...
                         </a>
-                      </div>
+                      </div>}
                     </div>
                   </div>
                 </Col>
