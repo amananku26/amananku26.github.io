@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Footer from "../Footer";
 import Skills from "./Skills";
 import GitHub from "./GiHub";
+import SocialProfiles from "./Social_profiles";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Skills />
       <Projects />
       <GitHub/>
+      <SocialProfiles/>
       <Contact />
       <Footer />
     </div>

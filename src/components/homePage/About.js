@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import WorkIcon from "@material-ui/icons/Work";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 import SkillSvg from "../../images/about-shape.svg";
-import Img from 'react-cool-img';
+import Img from "react-cool-img";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import { motion } from "framer-motion";
@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 const About = () => {
   const [tab, setTab] = useState("experience");
   const [element, controls] = useScroll();
-  
+
   const methodDoesNotExist = (aman) => {
-    throw new Error("this is a sentry error")
-   }
+    throw new Error("this is a sentry error");
+  };
 
   return (
     <motion.div id="about" className="about pb-6 pt-6">
@@ -28,14 +28,14 @@ const About = () => {
       >
         <Row className="">
           <Col className="p-0 text-center" md={5}>
-          <Img
-            placeholder="/images/skills/lod.jpeg"
-            src="/images/me1.png"
-            error="/images/skills/error.png"
-            alt="React Cool Img"
-            onClick={methodDoesNotExist}
-            height="50%"
-          />
+            <Img
+              placeholder="/images/skills/lod.jpeg"
+              src="/images/me1.png"
+              error="/images/skills/error.png"
+              alt="React Cool Img"
+              onClick={methodDoesNotExist}
+              height="50%"
+            />
           </Col>
           <Col className="" md={7}>
             <div className="about-info">
@@ -43,10 +43,12 @@ const About = () => {
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
               <p className="details">
-                Software Developer at Swedish company Nextory Private Limited (Formerly Known as frescano infoTech Pvt Lmt) .  I
-                have experience in the backend and frontend development. Interested in devising a better
-                problem‑solving method for challenging tasks, and learning new
-                technologies and tools if the need arises.
+                Software Developer at Swedish company Nextory Private Limited
+                (Formerly Known as frescano infoTech Pvt Lmt) . I have
+                experience in the backend and frontend development. Interested
+                in devising a better problem‑solving method for challenging
+                tasks, and learning new technologies and tools if the need
+                arises.
               </p>
               <div className="d-flex align-items-center resume-section ">
                 <h6>Resume :</h6>
@@ -87,8 +89,7 @@ const About = () => {
                       <h5>Nextory Private Limited</h5>
                       <ul>
                         <li>
-                          Working As a Frontend Developer
-                          (Tech - ReactJS,Redux)
+                          Working As a Frontend Developer (Tech - ReactJS,Redux)
                         </li>
                       </ul>
                     </div>
@@ -99,9 +100,9 @@ const About = () => {
                         <h5>B.tech</h5>
                         <ul>
                           <li className="text-justify">
-                            Graduated in Computer Science &
-                            engineering from Bengal College of Engineering and
-                            Technology in 2019.
+                            Graduated in Computer Science & engineering from
+                            Bengal College of Engineering and Technology in
+                            2019.
                           </li>
                         </ul>
                       </div>
