@@ -51,7 +51,7 @@ const SocialProfiles = () => {
                       />
                       <div className="imageCardEffect"></div>
                     </div>
-                    <div className="project-info">
+                    <div className="project-info1">
                       <h5 className="color-white font-weight-bold">
                         {project.title}
                       </h5>
