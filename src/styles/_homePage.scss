@@ -224,6 +224,14 @@
   background-size: cover;
 }
 
+.projects1 {
+  background: url(https://cutewallpaper.org/21/gif-background-hd/Space-Stars-Black-Background-Gif-1920x1080-.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .heading-section {
   text-align: center;
   margin-bottom: 4rem;
@@ -294,7 +302,14 @@
     }
   }
 }
-
+.project-card1{
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(147, 247, 89, 0.37);
+  backdrop-filter: blur( 20.0px );
+  -webkit-backdrop-filter: blur( 20.0px );
+  border-radius: 10px;
+  border: 1px solid rgba(124, 231, 75, 0.18);
+}
 .img-section {
   position: relative;
   overflow: hidden;

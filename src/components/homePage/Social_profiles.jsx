@@ -24,7 +24,7 @@ const myProjects = [
 const SocialProfiles = () => {
   const [element, controls] = useScroll();
   return (
-    <div className="projects" id="projects">
+    <div className="projects1" id="projects">
       <motion.div
         variants={window.innerWidth > 767 ? scrollReveal : null}
         ref={element}
@@ -41,7 +41,7 @@ const SocialProfiles = () => {
             {myProjects.map((project,index) => {
               return (
                 <Col md={4} className="mb-5" key={index+1}>
-                  <div className="project-card">
+                  <div className="project-card1">
                     <div className="img-section">
                     <Img
                       placeholder="/images/loading.gif"
