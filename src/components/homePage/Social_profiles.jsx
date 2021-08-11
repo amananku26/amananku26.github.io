@@ -16,7 +16,7 @@ const myProjects = [
   },
   {
     image: "https://assets.kpmg/content/dam/kpmg/gh/images/gh-award.jpg/jcr:content/renditions/original",
-    title: "SPOT AWARD MAY 2021 (Nextory Pvt Lmt)",
+    title: "EMPLOYEE SPOT AWARD MAY 2021",
     dLink: "Got the SPOT AWARD for the month of MAY 2021 at Nextory Pvt Lmt",
   }
 ];
