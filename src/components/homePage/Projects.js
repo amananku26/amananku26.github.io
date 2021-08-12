@@ -4,8 +4,8 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
-import Badge from 'react-bootstrap/Badge'
-import Img from 'react-cool-img';
+import Badge from "react-bootstrap/Badge";
+import Img from "react-cool-img";
 
 const myProjects = [
   {
@@ -15,8 +15,8 @@ const myProjects = [
       "Tried to replicate WhatsApp UI, and some features also. - Can Create Groups - Can Switch B/w the groups - send messages to any groups Used Firebase for the databases",
     source: "https://github.com/amananku26/whatsapp-clone",
     demoLink: "https://whatsapp-clone-53d8c.web.app/rooms/QIPEvsdzwLBr8AcT1WVD",
-    badge:"ReactJS",
-    liveweb:"https://www.youtube.com/watch?v=4DTHrXOLHnQ&t=52s"
+    badge: "ReactJS",
+    liveweb: "https://www.youtube.com/watch?v=4DTHrXOLHnQ&t=52s",
   },
   {
     image: "/images/fbclone.jpg",
@@ -25,8 +25,8 @@ const myProjects = [
       "The aim of this project is to make a pixel-perfect clone of Facebook. I used the BEM naming Convention Used Firebase for the databases",
     source: "https://github.com/amananku26/Facebook-Clone",
     demoLink: "https://facebook-clone-ccd54.web.app/",
-    badge:"ReactJS",
-    liveweb:"https://www.youtube.com/watch?v=_5Q8vTcpjhI"
+    badge: "ReactJS",
+    liveweb: "https://www.youtube.com/watch?v=_5Q8vTcpjhI",
   },
   {
     image: "/images/linkedclone.jpg",
@@ -35,8 +35,8 @@ const myProjects = [
       "This page is designed using HTML, CSS and Reactjs , redux , reduxthunk , json mocker User can upload post Like and comment on other post also.",
     source: "https://github.com/amananku26/Linkedin-Clone",
     demoLink: "https://linkedin-clone-a7ba5.web.app/",
-    badge:"ReactJS",
-    liveweb:"https://www.youtube.com/watch?v=CA1xCJvSCw8&t=32s"
+    badge: "ReactJS",
+    liveweb: "https://www.youtube.com/watch?v=CA1xCJvSCw8&t=32s",
   },
   {
     image: "/images/invoice.png",
@@ -44,7 +44,7 @@ const myProjects = [
     description:
       "User can Signup with google api and from iserting own data. After Login They can create a invoice Bonus- Can generate bill in form of PDF",
     source: "https://github.com/amananku26/kontext-invoice-app",
-    badge:"ReactJS"
+    badge: "ReactJS",
     // demoLink: "https://headphoonestore.netlify.app/",
   },
   {
@@ -54,8 +54,8 @@ const myProjects = [
       "Concept used ContextApi, Axios, Styled-Components, React-Router-Dom. User can Filter thrughout the Products ex - Sort Price , filter category",
     source: "https://github.com/amananku26/Basic-Shopping-Cart",
     demoLink: "https://shopping-cart-a0d9a.web.app/",
-    badge:"ReactJS",
-    liveweb:"https://www.youtube.com/watch?v=ukYdUnHidq8"
+    badge: "ReactJS",
+    liveweb: "https://www.youtube.com/watch?v=ukYdUnHidq8",
   },
   {
     image: "/images/covid.png",
@@ -64,8 +64,8 @@ const myProjects = [
       "User can Get the Detail of Availability of Slots of Vaccine on one click",
     source: "https://github.com/amananku26/covidSaharsa",
     demoLink: "https://covidsaharsa.netlify.app/",
-    badge:"ReactJS",
-  }
+    badge: "ReactJS",
+  },
 ];
 
 const Projects = () => {
@@ -85,24 +85,31 @@ const Projects = () => {
         </div>
         <div className="projects-cards">
           <Row className="justify-content-center">
-            {myProjects.map((project,index) => {
+            {myProjects.map((project, index) => {
               return (
-                <Col md={4} className="mb-5" key={index+1}>
-                <Badge className="lmckdncd" pill variant="warning">
-                  {project.badge}
+                <Col md={4} className="mb-5" key={index + 1}>
+                  <Badge className="lmckdncd" pill variant="warning">
+                    {project.badge}
                   </Badge>
-                {
-                  project.liveweb &&   <Badge className="jdnkcjd" pill variant="danger" >
-                     <a href={project.liveweb} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:'white'}}>Youtube</a>
-                      </Badge>
-                }
+                  {project.liveweb && (
+                    <Badge className="jdnkcjd" pill variant="danger">
+                      <a
+                        href={project.liveweb}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ textDecoration: "none", color: "white" }}
+                      >
+                        Youtube
+                      </a>
+                    </Badge>
+                  )}
                   <div className="project-card">
                     <div className="img-section">
-                    <Img
-                      placeholder="/images/loading.gif"
-                      src={project.image}
-                       error="/images/download.png"
-                       alt="React Cool Img"
+                      <Img
+                        placeholder="/images/loading.gif"
+                        src={project.image}
+                        error="/images/download.png"
+                        alt="React Cool Img"
                       />
                       <div className="imageCardEffect"></div>
                     </div>
