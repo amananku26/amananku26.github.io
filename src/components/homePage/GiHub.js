@@ -4,9 +4,6 @@ import { Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import CodersRankActivity from "@codersrank/activity";
-import CodersRankSkillsChart from "@codersrank/skills-chart";
-
-window.customElements.define("codersrank-skills-chart", CodersRankSkillsChart);
 window.customElements.define("codersrank-activity", CodersRankActivity);
 const GitHub = () => {
   const [element, controls] = useScroll();
@@ -25,17 +22,16 @@ const GitHub = () => {
         </div>
         <Row>
           <codersrank-activity username="amananku26"></codersrank-activity>
-          <codersrank-skills-chart username="amananku26"></codersrank-skills-chart>
+          <br />
           <img
             src="https://activity-graph.herokuapp.com/graph?username=amananku26&theme=github"
             alt="GitHub Activity Graph"
             width="100%"
           />
-          <img
-            src="https://activity-graph.herokuapp.com/graph?username=amananku26&theme=github"
-            alt="GitHub Activity Graph"
-            width="100%"
-          />
+          <br />
+          <br />
+          <img src="https://github-readme-stats.vercel.app/api?username=amananku26&count_private=true&&show_icons=true&count_private=true&line_height=27" width="100%" alt="Aman's github stats" />
+          
         </Row>
         <Row></Row>
       </motion.div>

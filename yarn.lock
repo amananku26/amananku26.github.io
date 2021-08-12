@@ -1149,6 +1149,11 @@
   resolved "https://registry.yarnpkg.com/@codersrank/activity/-/activity-0.9.14.tgz#06fdf1238e27aed4e326e5b9c66eb302969e5060"
   integrity sha512-PXZqim1xw2j+Pt/AWuzzmuibEvuPV9lPne0HCCmUtiKvFeSwE9UuHIpfXKQ1abrjD6b/3SuCRdYN3xEE20LlVg==
 
+"@codersrank/skills-chart@^0.9.20":
+  version "0.9.20"
+  resolved "https://registry.yarnpkg.com/@codersrank/skills-chart/-/skills-chart-0.9.20.tgz#2a6f68d53d0ca1268a753ffce4e7a603c4c8dd60"
+  integrity sha512-BB9laH051RsQemaI8NSRB98tyxTcqf5yxPwFUY6iKeknjBCFyWH227gdV2jvdXVvPT0Bryf1iYdQbz42uJL7tQ==
+
 "@codersrank/summary@^0.9.11":
   version "0.9.11"
   resolved "https://registry.yarnpkg.com/@codersrank/summary/-/summary-0.9.11.tgz#42ed8d97fdfd6904c7ce6d11d114b31f0136c407"
