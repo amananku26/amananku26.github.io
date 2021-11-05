@@ -71,19 +71,19 @@ const Footer = () => {
           <Col md={5} xs={12}>
             <ul className="d-flex justify-content-between p-0 w-100 footer-info mt-4 ">
               <li className="p-1">
-                <a href="#home">Home</a>
+                <a rel="noopener noreferrer" href="#home">Home</a>
               </li>
               <li className="p-1">
-                <a href="#about">About</a>
+                <a rel="noopener noreferrer" href="#about">About</a>
               </li>
               <li className="p-1">
-                <a href="#skills">Skills</a>
+                <a rel="noopener noreferrer" href="#skills">Skills</a>
               </li>
               <li className="p-1">
-                <a href="#projects">Projects</a>
+                <a rel="noopener noreferrer" href="#projects">Projects</a>
               </li>
               <li className="p-1">
-                <a href="#contact">Contact</a>
+                <a rel="noopener noreferrer" href="#contact">Contact</a>
               </li>
             </ul>
           </Col>

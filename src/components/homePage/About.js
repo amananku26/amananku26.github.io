@@ -52,7 +52,7 @@ const About = () => {
               </p>
               <div className="d-flex align-items-center resume-section ">
                 <h6>Resume :</h6>
-                <a href="/my-resume.pdf" target="_blank">
+                <a rel="noopener noreferrer" href="/my-resume.pdf" target="_blank">
                   View
                 </a>
               </div>

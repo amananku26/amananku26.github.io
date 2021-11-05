@@ -93,7 +93,7 @@ const Projects = () => {
                   </Badge>
                   {project.liveweb && (
                     <Badge className="jdnkcjd" pill variant="danger">
-                      <a
+                      <a rel="noopener noreferrer"
                         href={project.liveweb}
                         target="_blank"
                         rel="noreferrer"
@@ -119,7 +119,7 @@ const Projects = () => {
                       </h5>
                       <p className="color-white">{project.description}</p>
                       <div className="d-flex justify-content-between mr-4">
-                        <a
+                        <a rel="noopener noreferrer"
                           href={project.source}
                           className="project-card-btn"
                           target="_blank"
@@ -127,7 +127,7 @@ const Projects = () => {
                         >
                           Source Code
                         </a>
-                        <a
+                        <a rel="noopener noreferrer"
                           href={project.demoLink}
                           className="project-card-btn"
                           target="_blank"

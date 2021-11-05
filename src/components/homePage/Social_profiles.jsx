@@ -57,7 +57,7 @@ const SocialProfiles = () => {
                       </h5>
                       <p className="color-white">{project.dLink}</p>
                      {project.demoLink && <div className="d-flex justify-content-between mr-4">
-                        <a
+                        <a rel="noopener noreferrer"
                           href={project.demoLink}
                           className="project-card-btn"
                           target="_blank"
