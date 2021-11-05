@@ -49,7 +49,7 @@ class App extends Component {
 const steps = [
   {
     selector: '[data-tut="reactour__copy"]',
-    content: 'Please Give Feedback it will hardly take 30 sec (Bottom Right Side Corner of Screen )',
+    content: 'Thank You For Visiting My PortFolio , Please Give Feedback if You like My Work It Will Hardly Take 30 sec (Bottom Right Side Corner of Screen )',
   }
 ]
 
