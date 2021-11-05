@@ -17,10 +17,10 @@ const NavPart = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto ml-4 nav-left-side">
-              <Nav.Link href="#home" className="nav-item">
+              <Nav.Link rel="noopener noreferrer" href="#home" className="nav-item">
                 Home
               </Nav.Link>
-              <Nav.Link href="#about" className="nav-item">
+              <Nav.Link rel="noopener noreferrer" href="#about" className="nav-item">
                 About
               </Nav.Link>
 
@@ -41,21 +41,21 @@ const NavPart = () => {
               }`}
             >
               <div className="d-flex justify-content-between w-100">
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
                  <LinkedInIcon/>
                 </Nav.Link>
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
                   <GitHubIcon />
                 </Nav.Link>
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://www.hackerrank.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -66,7 +66,7 @@ const NavPart = () => {
                     alt="icon"
                   />
                 </Nav.Link>
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -77,14 +77,14 @@ const NavPart = () => {
                     alt="icon"
                   />
                 </Nav.Link>
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://www.youtube.com/c/AmanAnku"
                   className="nav-item cursor-pointer"
                   target="_blank"
                 >
                   <YouTubeIcon/>
                 </Nav.Link>
-                <Nav.Link
+                <Nav.Link rel="noopener noreferrer"
                   href="https://stackoverflow.com/users/14988771/aman-anku"
                   className="nav-item cursor-pointer"
                   target="_blank"
