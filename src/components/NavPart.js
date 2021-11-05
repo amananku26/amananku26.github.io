@@ -24,14 +24,14 @@ const NavPart = () => {
                 About
               </Nav.Link>
 
-              <Nav.Link href="#skills" className="nav-item">
+              <Nav.Link rel="noopener noreferrer" href="#skills" className="nav-item">
                 Skills
               </Nav.Link>
-              <Nav.Link href="#projects" className="nav-item">
+              <Nav.Link rel="noopener noreferrer" href="#projects" className="nav-item">
                 Projects
               </Nav.Link>
 
-              <Nav.Link href="#contact" className="nav-item">
+              <Nav.Link rel="noopener noreferrer" href="#contact" className="nav-item">
                 Contact
               </Nav.Link>
             </Nav>
