@@ -17,6 +17,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="Linkedin"
                 >
                  <LinkedInIcon/>
                 </Nav.Link>
@@ -24,6 +25,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
+                  aria-label="Github"
                   target="_blank"
                 >
                   <GitHubIcon />
@@ -33,6 +35,7 @@ const Footer = () => {
                   href="https://www.hackerrank.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="hackerrank"
                 >
                   <img
                     height="25px"
@@ -45,6 +48,7 @@ const Footer = () => {
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="medium"
                 >
                   <img
                     height="25px"
@@ -57,6 +61,7 @@ const Footer = () => {
                   href="https://www.youtube.com/c/AmanAnku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="Youtube"
                 >
                   <YouTubeIcon/>
                 </Nav.Link>
@@ -65,6 +70,7 @@ const Footer = () => {
                   href="https://stackoverflow.com/users/14988771/aman-anku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="stackoverflow"
                 >
                   <img
                     height="25px"

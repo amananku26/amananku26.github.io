@@ -44,6 +44,7 @@ const NavPart = () => {
                 <Nav.Link rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
+                  aria-label="Linkedin"
                   target="_blank"
                 >
                  <LinkedInIcon/>
@@ -52,6 +53,7 @@ const NavPart = () => {
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="github"
                 >
                   <GitHubIcon />
                 </Nav.Link>
@@ -59,6 +61,7 @@ const NavPart = () => {
                   href="https://www.hackerrank.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="hackerrank"
                 >
                   <img
                     height="25px"
@@ -70,6 +73,7 @@ const NavPart = () => {
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="medium"
                 >
                   <img
                     height="25px"
@@ -81,6 +85,7 @@ const NavPart = () => {
                   href="https://www.youtube.com/c/AmanAnku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="youtube"
                 >
                   <YouTubeIcon/>
                 </Nav.Link>
@@ -88,6 +93,7 @@ const NavPart = () => {
                   href="https://stackoverflow.com/users/14988771/aman-anku"
                   className="nav-item cursor-pointer"
                   target="_blank"
+                  aria-label="stackoverflow"
                 >
                   <img
                     height="25px"

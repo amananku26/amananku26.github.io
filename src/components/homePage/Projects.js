@@ -106,7 +106,7 @@ const Projects = () => {
                   <div className="project-card">
                     <div className="img-section">
                       <Img
-                        placeholder="https://i.pinimg.com/originals/a7/b0/15/a7b015d343ad801ad6da8c242dc6ae06.gif"
+                        placeholder="https://p4.wallpaperbetter.com/wallpaper/990/450/548/loading-wallpaper-preview.jpg"
                         src={project.image}
                         error="/images/download.png"
                         alt="React Cool Img"
