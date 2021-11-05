@@ -13,6 +13,7 @@ const Footer = () => {
           <Col md={3} xs={12}>
             <div className="d-flex justify-content-between footer-info mt-4">
             <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/amananku26/"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -20,6 +21,7 @@ const Footer = () => {
                  <LinkedInIcon/>
                 </Nav.Link>
                 <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://github.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -27,6 +29,7 @@ const Footer = () => {
                   <GitHubIcon />
                 </Nav.Link>
                 <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://www.hackerrank.com/amananku26"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -38,6 +41,7 @@ const Footer = () => {
                   />
                 </Nav.Link>
                 <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -49,6 +53,7 @@ const Footer = () => {
                   />
                 </Nav.Link>
                 <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://www.youtube.com/c/AmanAnku"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -56,6 +61,7 @@ const Footer = () => {
                   <YouTubeIcon/>
                 </Nav.Link>
                 <Nav.Link
+                  rel="noopener noreferrer"
                   href="https://stackoverflow.com/users/14988771/aman-anku"
                   className="nav-item cursor-pointer"
                   target="_blank"
