@@ -10,11 +10,11 @@ import Skills from "./Skills";
 import GitHub from "./GiHub";
 import SocialProfiles from "./Social_profiles";
 
-const HomePage = () => {
+const HomePage = ({countData}) => {
   return (
     <div>
       <NavPart />
-      <Home />
+      <Home countData={countData}/>
       <About />
       <Skills />
       <Projects />

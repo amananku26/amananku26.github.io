@@ -3,16 +3,18 @@ import { Col, Row } from "react-bootstrap";
 import { pageAnimation, titleAnim } from "../../animation";
 import { useScroll } from "./useScroll";
 import { motion } from "framer-motion";
+import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
 
 const TransformText = () => {
     return "</ Changing the world one commit at a Time >"
 }
 
-const Home = () => {
+const Home = ({countData}) => {
   const [element, controls] = useScroll();
   return (
     <div id="home" className="fix  ">
       <div className="bg-image">
+      
         <motion.div
           variants={pageAnimation}
           ref={element}
@@ -23,7 +25,8 @@ const Home = () => {
             <Col md={8} xs={12}>
               <motion.div className="intro-section">
                 <motion.h5 variants={titleAnim} className="mb-5">
-                <TransformText  />
+                <h6 style={{color:"white"}}>{" Page Count "}<RemoveRedEyeIcon/>{" "}{countData}</h6>
+                <TransformText  /> 
                 </motion.h5>
                 <motion.h1 variants={titleAnim} className="mb-4">
                   Hi, I'm <span className="chonburi-font green-text">Aman</span>
