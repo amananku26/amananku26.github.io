@@ -18,6 +18,11 @@ const myProjects = [
     image: "https://assets.kpmg/content/dam/kpmg/gh/images/gh-award.jpg/jcr:content/renditions/original",
     title: "EMPLOYEE SPOT AWARD MAY 2021",
     dLink: "Got the Spot award for May 2021 at Nextory Pvt Lmt For my contribution of integrating and successfully deliver it in a time, A new module to our Spain website and parallelly working on the other bugs and tasks.",
+  },
+  {
+    image: "https://media-exp1.licdn.com/dms/image/C5622AQFuWJTF_j2PCw/feedshare-shrink_2048_1536/0/1639755844005?e=1648080000&v=beta&t=ImelOFP24OgM9FgO9Vd9p4kNl1k0y3dtRrWSr05nmDM",
+    title: "EMPLOYEE SPOT AWARD NOVEMBER 2021",
+    dLink: "Got The Spot Award for my contribution and dedication to the work and also taking more tasks and its responsibility, adding value to the discussion for my views ahead for the functionality to be discussed.I communicate across the team and other teams as well to get the dependencies discussed and get to completion",
   }
 ];
 
@@ -48,6 +53,7 @@ const SocialProfiles = () => {
                       src={project.image}
                        error="/images/download.png"
                        alt="React Cool Img"
+                       className='fixImageDynamic'
                       />
                       <div className="imageCardEffect"></div>
                     </div>

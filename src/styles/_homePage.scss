@@ -319,6 +319,7 @@
   border-radius: 10px;
   border: 1px solid rgba(124, 231, 75, 0.18);
 }
+
 .img-section {
   position: relative;
   overflow: hidden;
@@ -329,6 +330,8 @@
     height: 14rem;
     width: 100%;
     object-fit: cover;
+    margin: 0.5rem;
+    border-radius: 10px;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: scale(1.15);
