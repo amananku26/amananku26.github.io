@@ -26,13 +26,14 @@ const GitHub = () => {
           <img
             src="https://activity-graph.herokuapp.com/graph?username=amananku26&theme=github"
             alt="GitHub Activity Graph"
-            width="100%"
+            width="55%"
           />
           <br />
           <br />
-          <img src="https://github-readme-stats.vercel.app/api?username=amananku26&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" width="100%" alt="Aman's github stats" />
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amananku26&layout=compact" width="100%" alt="Aman's github stats" />
-          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=amananku26&repo=covidSaharsa" width="100%" alt="Aman's github stats" />
+          <img src="https://github-readme-stats.vercel.app/api?username=amananku26&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" width="45%" alt="Aman's github stats" />
+          {/* <br/><br/><br/><br/><br/><br/> */}
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amananku26&layout=compact" width="40%" alt="Aman's github stats" />
+          <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=amananku26&repo=covidSaharsa" width="60%" alt="Aman's github stats" />
         </Row>
         <Row></Row>
       </motion.div>
