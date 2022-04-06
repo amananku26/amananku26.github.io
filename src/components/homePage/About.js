@@ -28,7 +28,7 @@ const About = () => {
       >
         <Row className="">
           <Col className="p-0 text-center" md={5}>
-            <Img
+            <img
               placeholder="/images/skills/lod.jpeg"
               src="/images/222.gif"
               error="/images/skills/error.png"
