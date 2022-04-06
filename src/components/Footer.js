@@ -78,6 +78,19 @@ const Footer = () => {
                     alt="icon"
                   />
                 </Nav.Link>
+                <Nav.Link
+                  rel="noopener noreferrer"
+                  href="https://opensea.io/coder26"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                  aria-label="stackoverflow"
+                >
+                  <img
+                    height="25px"
+                    src="https://styles.redditmedia.com/t5_4147ke/styles/communityIcon_lwl9gso33qk61.png"
+                    alt="icon"
+                  />
+                </Nav.Link>
             </div>
           </Col>
           <Col md={5} xs={12}>

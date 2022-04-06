@@ -58,18 +58,6 @@ const NavPart = () => {
                   <GitHubIcon />
                 </Nav.Link>
                 <Nav.Link rel="noopener noreferrer"
-                  href="https://www.hackerrank.com/amananku26"
-                  className="nav-item cursor-pointer"
-                  target="_blank"
-                  aria-label="hackerrank"
-                >
-                  <img
-                    height="25px"
-                    src="images/hr.jpeg"
-                    alt="icon"
-                  />
-                </Nav.Link>
-                <Nav.Link rel="noopener noreferrer"
                   href="https://medium.com/@amananku"
                   className="nav-item cursor-pointer"
                   target="_blank"
@@ -98,6 +86,19 @@ const NavPart = () => {
                   <img
                     height="25px"
                     src="images/so.png"
+                    alt="icon"
+                  />
+                </Nav.Link>
+                <Nav.Link
+                  rel="noopener noreferrer"
+                  href="https://opensea.io/coder26"
+                  className="nav-item cursor-pointer"
+                  target="_blank"
+                  aria-label="stackoverflow"
+                >
+                  <img
+                    height="25px"
+                    src="https://styles.redditmedia.com/t5_4147ke/styles/communityIcon_lwl9gso33qk61.png"
                     alt="icon"
                   />
                 </Nav.Link>
