@@ -5,7 +5,7 @@ import "./Feeder.css"
 
 class Feed extends Component {
   render() {
-    const { openTour, isShowingMore, toggleShowMore,dddd } = this.props
+    const {dddd } = this.props
     Feedback.defaultProps = {
       email: true,
       emailRequired: true,

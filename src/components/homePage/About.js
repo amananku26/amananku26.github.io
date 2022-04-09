@@ -3,7 +3,6 @@ import { Col, Row } from "react-bootstrap";
 import WorkIcon from "@material-ui/icons/Work";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 import SkillSvg from "../../images/about-shape.svg";
-import Img from "react-cool-img";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
 import { motion } from "framer-motion";
@@ -43,12 +42,10 @@ const About = () => {
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
               <p className="details">
-                Software Developer at Swedish company Nextory Private Limited
-                (Formerly Known as frescano infoTech Pvt Lmt) . I have
-                experience in the backend and frontend development. Interested
+                Software Developer at Nextory Private Limited. I have
+                experience in the frontend development.My major strengths are in giving realistic promises, being responsive and responsible, concentrating on business needs and communications. Interested
                 in devising a better problem‑solving method for challenging
-                tasks, and learning new technologies and tools if the need
-                arises.
+                tasks.
               </p>
               <div className="d-flex align-items-center resume-section ">
                 <h6>Resume :</h6>
@@ -60,22 +57,20 @@ const About = () => {
                 <Row className="tabs mb-2">
                   <Col
                     className={`
-                      ${
-                        tab === "experience"
-                          ? "active-tab custom-mr-3"
-                          : "inactive-tab"
+                      ${tab === "experience"
+                        ? "active-tab custom-mr-3"
+                        : "inactive-tab"
                       } tab`}
                     onClick={() => setTab("experience")}
                   >
                     <WorkIcon />
-                    <h5>Experiences</h5>
+                    <h5>Work Experiences</h5>
                   </Col>
                   <Col
                     className={`
-                      ${
-                        tab === "education"
-                          ? "active-tab custom-ml-3"
-                          : "inactive-tab"
+                      ${tab === "education"
+                        ? "active-tab custom-ml-3"
+                        : "inactive-tab"
                       } tab`}
                     onClick={() => setTab("education")}
                   >
@@ -83,6 +78,7 @@ const About = () => {
                     <h5>Educations</h5>
                   </Col>
                 </Row>
+                <br/>
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
@@ -90,7 +86,7 @@ const About = () => {
                       <ul>
                         <li>
                           Working As a Frontend Developer (Tech - ReactJS,Redux)
-                        </li>
+                        </li> 
                       </ul>
                     </div>
                   ) : null}

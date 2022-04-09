@@ -4,7 +4,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
-import Badge from 'react-bootstrap/Badge'
 import Img from 'react-cool-img';
 
 const myProjects = [
@@ -15,7 +14,7 @@ const myProjects = [
     demoLink: "https://blog.masaischool.com/amans-never-ending-dream-of-becoming-a-coder-finally-came-true-this-is-how/",
   },
   {
-    image: "https://i.pinimg.com/originals/3d/a1/c2/3da1c204207bec1124d5a7c8f945346f.gif",
+    image: "https://www.poynter.org/wp-content/uploads/2020/06/shutterstock_1211814685.png",
     title: "EMPLOYEE SPOT AWARD MAY 2021",
     dLink: "Got the Spot award for May 2021 at Nextory Pvt Lmt For my contribution of integrating and successfully deliver it in a time, A new module to our Spain website and parallelly working on the other bugs and tasks.",
   },
@@ -67,7 +66,6 @@ const SocialProfiles = () => {
                           href={project.demoLink}
                           className="project-card-btn"
                           target="_blank"
-                          rel="noreferrer"
                         >
                           Read ...
                         </a>

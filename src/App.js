@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Feed from "./components/homePage/Feedback"
 import HomePage from "./components/homePage/HomePage";
 import ScrollArrow from "./Scroll.jsx"
-import Tour from 'reactour'
 import firebase from "firebase"
 import db from "./firebase"
 import Cookies from 'js-cookie' 
@@ -23,7 +22,6 @@ class App extends Component {
   }
   componentDidMount(){
   this.setState({isLoading:false})  
-  var bbb = 0
   const getFromFirebase = firebase.firestore().collection("count");
   getFromFirebase.onSnapshot((querySnapShot) => {
     const saveFirebaseTodos = [];
@@ -36,7 +34,7 @@ class App extends Component {
    });
    const Pdata = Number(Cookies.get('persist-pagecount'))
    if(Pdata && Pdata > 1){
-     const unsub = db.collection('count').doc('zmTUjbygQRgOvBlyIiH2').set({
+      db.collection('count').doc('zmTUjbygQRgOvBlyIiH2').set({
        "countnum": Pdata
      }, { merge: true })
    }
@@ -82,11 +80,5 @@ class App extends Component {
   );
 }}
 }
-const steps = [
-  {
-    selector: '[data-tut="reactour__copy"]',
-    content: 'Thank You For Visiting My PortFolio , Please Give Feedback if You like My Work It Will Hardly Take 30 sec (Bottom Right Side Corner of Screen )',
-  }
-]
 
 export default App;

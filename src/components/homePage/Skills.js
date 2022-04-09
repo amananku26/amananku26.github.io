@@ -109,7 +109,7 @@ const Skills = () => {
                     error="/images/skills/error.png"
                     alt="React Cool Img"
                   />
-                  <a rel="noopener noreferrer" href={skill.link} target="_blank" rel="noreferrer">
+                  <a rel="noopener noreferrer" href={skill.link} target="_blank">
                     {" "}
                     <h6>{skill.name}</h6>{" "}
                   </a>

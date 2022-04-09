@@ -96,7 +96,6 @@ const Projects = () => {
                       <a rel="noopener noreferrer"
                         href={project.liveweb}
                         target="_blank"
-                        rel="noreferrer"
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         Youtube
@@ -123,7 +122,6 @@ const Projects = () => {
                           href={project.source}
                           className="project-card-btn"
                           target="_blank"
-                          rel="noreferrer"
                         >
                           Source Code
                         </a>
@@ -131,7 +129,6 @@ const Projects = () => {
                           href={project.demoLink}
                           className="project-card-btn"
                           target="_blank"
-                          rel="noreferrer"
                         >
                           Live Demo
                         </a>
