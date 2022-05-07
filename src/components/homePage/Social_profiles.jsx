@@ -8,7 +8,7 @@ import Img from 'react-cool-img';
 
 const myProjects = [
   {
-    image: "https://blog.masaischool.com/wp-content/uploads/2021/06/Aman-1024x441.jpg",
+    image: "https://blog.masaischool.com/content/images/size/w2000/2022/05/Aman-Anku.png",
     title: "My Journey",
     dLink:"Aman’s Never-Ending Dream Of Becoming A Coder Finally.........",
     demoLink: "https://blog.masaischool.com/amans-never-ending-dream-of-becoming-a-coder-finally-came-true-this-is-how/",
