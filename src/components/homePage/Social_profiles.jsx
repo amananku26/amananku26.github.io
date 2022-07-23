@@ -14,12 +14,12 @@ const myProjects = [
     demoLink: "https://blog.masaischool.com/amans-never-ending-dream-of-becoming-a-coder-finally-came-true-this-is-how/",
   },
   {
-    image: "https://www.poynter.org/wp-content/uploads/2020/06/shutterstock_1211814685.png",
+    image: "https://img.freepik.com/free-vector/winner-gold-trophy-with-red-pleated-badge-rosette-award-realistic-closeup-composition-blurry-light_1284-27888.jpg?w=2000",
     title: "EMPLOYEE SPOT AWARD MAY 2021",
     dLink: "Got the Spot award for May 2021 at Nextory Pvt Lmt For my contribution of integrating and successfully deliver it in a time, A new module to our Spain website and parallelly working on the other bugs and tasks.",
   },
   {
-    image: "https://www.poynter.org/wp-content/uploads/2020/06/shutterstock_1211814685.png",
+    image: "https://img.freepik.com/free-vector/winner-gold-trophy-with-red-pleated-badge-rosette-award-realistic-closeup-composition-blurry-light_1284-27888.jpg?w=2000",
     title: "EMPLOYEE SPOT AWARD NOVEMBER 2021",
     dLink: "Got The Spot Award for my contribution and dedication to the work and also taking more tasks and its responsibility, adding value to the discussion for my views ahead for the functionality to be discussed.I communicate across the team and other teams as well to get the dependencies discussed and get to completion",
   }
