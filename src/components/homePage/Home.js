@@ -34,7 +34,7 @@ const Home = ({countData}) => {
                 </motion.h1>
                 <motion.h2 variants={titleAnim} className="mb-4">
                   <span className="chonburi-font green-text">Software Engineer At</span>{" "}
-                  Nextory Private Limited
+                  Pintar Edutech Pvt Lmt
                 </motion.h2>
               </motion.div>
             </Col>

@@ -82,6 +82,12 @@ const About = () => {
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
+                      <h5>Pintar Edutech Private Limited</h5>
+                      <ul>
+                        <li>
+                          Working As a Frontend Developer (Tech - NextJs,ReactJS,Redux)
+                        </li> 
+                      </ul>
                       <h5>Nextory Private Limited</h5>
                       <ul>
                         <li>
