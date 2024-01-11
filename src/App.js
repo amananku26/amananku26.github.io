@@ -14,7 +14,6 @@ class App extends Component {
       isShowingMore: false,
       countData:0,
       status:false,
-      isLoading:true
     }
 
   }
@@ -29,13 +28,7 @@ class App extends Component {
     }));
   };
   render(){
-  if(this.state.isLoading){
-     console.log(" countData",this.state.countData) 
-    
-        
-    return <div>Loadind....</div>
-  }  else {
-    console.log(" countData",this.state.countData) 
+
  
   return (
     <div className="App">
@@ -48,16 +41,9 @@ class App extends Component {
       isShowingMore={this.state.isShowingMore}
       />
       <ScrollArrow/>
-      {/* <Tour
-       steps={steps}
-       isOpen={this.state.isTourOpen}
-      //  maskClassName="mask"
-       className="helper"
-        rounded={5}
-       onRequestClose={this.closeTour}/>; */}
     </div>
   );
 }}
-}
+
 
 export default App;
