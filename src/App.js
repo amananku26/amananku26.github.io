@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Feed from "./components/homePage/Feedback"
 import HomePage from "./components/homePage/HomePage";
 import ScrollArrow from "./Scroll.jsx"
-import Cookies from 'js-cookie' 
 
 class App extends Component {
   constructor(){
@@ -17,12 +16,6 @@ class App extends Component {
       status:false,
       isLoading:true
     }
-
-  }
-
-  componentDidMount(){
-  // window.location.href = 'https://linktr.ee/amananku26'  
-  this.setState({isLoading:false})  
 
   }
   
