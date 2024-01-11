@@ -3,8 +3,6 @@ import React from "react";
 import { Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
-import CodersRankActivity from "@codersrank/activity";
-window.customElements.define("codersrank-activity", CodersRankActivity);
 const GitHub = () => {
   const [element, controls] = useScroll();
   return (
