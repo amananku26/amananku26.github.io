@@ -1,0 +1,45 @@
+.clipped {
+  text-decoration: none;
+  font-size: 1rem;
+  -webkit-text-stroke: #737575;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.lipped {
+  background: linear-gradient(
+    to right,
+    transparent 10%,
+    transparent 50%,
+    #737575 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% auto;
+  animation: rtl 1.5s linear infinite;
+}
+.lipped {
+  background: linear-gradient(
+    to right,
+    #737575 40%,
+    #a0a0a0 50%,
+    transparent 60%
+  );
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 0% auto;
+  animation: ltr 1.5s linear infinite;
+}
+
+@keyframes rtl {
+  to {
+    background-position: 100% center;
+  }
+}
+
+@keyframes ltr {
+  to {
+    background-size: 200% auto;
+  }
+}
