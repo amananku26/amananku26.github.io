@@ -7,7 +7,6 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../Footer";
 import Skills from "./Skills";
-import GitHub from "./GiHub";
 import SocialProfiles from "./Social_profiles";
 
 const HomePage = ({countData}) => {
@@ -18,7 +17,7 @@ const HomePage = ({countData}) => {
       <About />
       <Skills />
       <Projects />
-      <GitHub/>
+      {/* <GitHub/> */}
       <SocialProfiles/>
       <Contact />
       <Footer />
