@@ -4,8 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Feed from "./components/homePage/Feedback"
 import HomePage from "./components/homePage/HomePage";
 import ScrollArrow from "./Scroll.jsx"
-import firebase from "firebase"
-import db from "./firebase"
 import Cookies from 'js-cookie' 
 
 class App extends Component {
@@ -25,22 +23,7 @@ class App extends Component {
   componentDidMount(){
   // window.location.href = 'https://linktr.ee/amananku26'  
   this.setState({isLoading:false})  
-  const getFromFirebase = firebase.firestore().collection("count");
-  getFromFirebase.onSnapshot((querySnapShot) => {
-    const saveFirebaseTodos = [];
-    querySnapShot.forEach((doc) => {
-      doc.id === 'zmTUjbygQRgOvBlyIiH2' && saveFirebaseTodos.push( doc.data());
-       
-    });
-    Cookies.set('persist-pagecount', saveFirebaseTodos[0].countnum+1)
-    this.setState({countData:saveFirebaseTodos[0].countnum,status:true})
-   });
-   const Pdata = Number(Cookies.get('persist-pagecount'))
-   if(Pdata && Pdata > 1){
-      db.collection('count').doc('zmTUjbygQRgOvBlyIiH2').set({
-       "countnum": Pdata
-     }, { merge: true })
-   }
+
   }
   
 
