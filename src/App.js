@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-  window.location.href = 'https://linktr.ee/amananku26'  
+  // window.location.href = 'https://linktr.ee/amananku26'  
   this.setState({isLoading:false})  
   const getFromFirebase = firebase.firestore().collection("count");
   getFromFirebase.onSnapshot((querySnapShot) => {
