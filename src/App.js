@@ -10,6 +10,7 @@ import Cookies from 'js-cookie'
 
 class App extends Component {
   constructor(){
+    
     super()
     this.state = {
       isTourOpen : true,
