@@ -37,7 +37,7 @@ const Home = ({countData}) => {
                   <span className="chonburi-font green-text">Software Engineer At</span>{" "}
                   Pintar Edutech Pvt Lmt
                 </motion.h2>
-                <a href='https://linktr.ee/amananku26' rel="noreferrer" target="_blank"  class="clipped clipped-ltr" className={`${styles.clipped} ${styles.lipped}` }>Check Link Tree 👉</a>
+                <a href='https://linktr.ee/amananku26' rel="noreferrer" target="_blank"  class="clipped clipped-ltr" className={`${styles.clipped} ${styles.lipped}` }> 👉 Check Link Tree </a>
               </motion.div>
             </Col>
           </Row>
