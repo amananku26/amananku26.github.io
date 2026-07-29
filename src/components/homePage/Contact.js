@@ -21,8 +21,8 @@ const Contact = () => {
               <span className="chonburi-font green-text">Get</span> in Touch
             </h1>
             <p className="mb-5">
-              For any information regarding my work kindly, contact me though
-              the following phone number or email address.
+              Interested in building a fast, accessible, and scalable frontend
+              experience? I’d be glad to connect.
             </p>
             <h5 className="mb-4">
               <span className="chonburi-font green-text">PhoneNo:</span> +91

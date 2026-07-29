@@ -11,10 +11,6 @@ const About = () => {
   const [tab, setTab] = useState("experience");
   const [element, controls] = useScroll();
 
-  const methodDoesNotExist = (aman) => {
-    throw new Error("this is a sentry error");
-  };
-
   return (
     <motion.div id="about" className="about pb-6 pt-6">
       <img className="skills-img" src={SkillSvg} alt="" />
@@ -32,7 +28,6 @@ const About = () => {
               src="/images/222.gif"
               error="/images/skills/error.png"
               alt="React Cool Img"
-              onClick={methodDoesNotExist}
               height="50%"
             />
           </Col>
@@ -42,10 +37,12 @@ const About = () => {
                 <span className="chonburi-font green-text ">Abo</span>ut Me
               </h1>
               <p className="details">
-                Software Developer at Nextory Private Limited. I have
-                experience in the frontend development.My major strengths are in giving realistic promises, being responsive and responsible, concentrating on business needs and communications. Interested
-                in devising a better problem‑solving method for challenging
-                tasks.
+                Senior Frontend Engineer with 5+ years of experience building
+                scalable frontend systems with React, Next.js, and TypeScript.
+                I specialize in SSR/SSG, Core Web Vitals, internationalization,
+                Headless CMS integrations, and reusable component architecture.
+                I enjoy translating complex business needs into fast,
+                accessible, reliable product experiences.
               </p>
               <div className="d-flex align-items-center resume-section ">
                 <h6>Resume :</h6>
@@ -82,17 +79,23 @@ const About = () => {
                 <div className="about-sub-data">
                   {tab === "experience" ? (
                     <div className="work-experiences">
-                      <h5>Pintar Edutech Private Limited</h5>
+                      <h5>Grid Dynamics <small>(Jul 2025 – Present)</small></h5>
                       <ul>
                         <li>
-                          Working As a Frontend Developer (Tech - NextJs,ReactJS,Redux)
-                        </li> 
+                          Senior Frontend Engineer delivering scalable React.js and TypeScript UI components for VISA’s global enterprise platform.
+                        </li>
+                        <li>Own Core Web Vitals and accessibility improvements across cross-functional teams.</li>
                       </ul>
-                      <h5>Nextory Private Limited</h5>
+                      <h5>Pintar Pvt. Ltd. <small>(Sep 2022 – Jul 2025)</small></h5>
                       <ul>
                         <li>
-                          Working As a Frontend Developer (Tech - ReactJS,Redux)
-                        </li> 
+                          Built a Next.js SSR/SSG recruitment platform with i18n and real-time API integrations for thousands of daily active users.
+                        </li>
+                        <li>Designed a reusable component library and led microfrontend delivery with independent CI/CD deployments.</li>
+                      </ul>
+                      <h5>Nextory Pvt. Ltd. <small>(Jan 2021 – Sep 2022)</small></h5>
+                      <ul>
+                        <li>Led a React.js to Next.js migration, improving Core Web Vitals and SEO; received two Spot Awards.</li>
                       </ul>
                     </div>
                   ) : null}

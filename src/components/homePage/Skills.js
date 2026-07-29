@@ -18,7 +18,7 @@ const skills = [
   },
   {
     logo: "/images/skills/js.png",
-    name: "Javascript",
+    name: "JavaScript / TypeScript",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -48,7 +48,7 @@ const skills = [
   },
   {
     logo: "/images/skills/redux.png",
-    name: "Redux/Redux-thunk/Redux-Saga",
+    name: "Redux / Redux-Saga / RTK",
     link: "https://redux.js.org/",
   },
   {
@@ -73,12 +73,12 @@ const skills = [
   },
   {
     logo: "/images/skills/sentry.png",
-    name: "Sentry.io",
-    link: "https://docs.sentry.io/",
+    name: "Jest / Cypress",
+    link: "https://jestjs.io/",
   },
   {
     logo: "/images/skills/i18.png",
-    name: "i18next",
+    name: "i18n / Headless CMS",
     link: "https://www.i18next.com/",
   },
 ];

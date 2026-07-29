@@ -7,7 +7,7 @@ import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
 import styles from "./styles.module.css"
 
 const TransformText = () => {
-    return "</ Changing the world one commit at a Time >"
+    return "</ Building fast, accessible products for the web >"
 }
 
 const Home = ({countData}) => {
@@ -34,8 +34,8 @@ const Home = ({countData}) => {
                   Anku
                 </motion.h1>
                 <motion.h2 variants={titleAnim} className="mb-4">
-                  <span className="chonburi-font green-text">Software Engineer At</span>{" "}
-                  Pintar Edutech Pvt Lmt
+                  <span className="chonburi-font green-text">Senior Frontend Engineer at</span>{" "}
+                  Grid Dynamics
                 </motion.h2>
                 <a href='https://linktr.ee/amananku26' rel="noreferrer" target="_blank"  class="clipped clipped-ltr" className={`${styles.clipped} ${styles.lipped}` }> 👉 Check Link Tree </a>
               </motion.div>
