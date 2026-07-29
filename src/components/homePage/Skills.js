@@ -1,126 +1,21 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { scrollReveal } from "../../animation";
-import { useScroll } from "./useScroll";
-import Img from "react-cool-img";
 
-const skills = [
-  {
-    logo: "/images/skills/html.png",
-    name: "Html",
-    link: "https://www.w3schools.com/html/",
-  },
-  {
-    logo: "/images/skills/css-3.png",
-    name: "Css",
-    link: "https://www.w3schools.com/css/",
-  },
-  {
-    logo: "/images/skills/js.png",
-    name: "JavaScript / TypeScript",
-    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    logo: "/images/skills/git-logo.png",
-    name: "Git",
-    link: "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
-  },
-  {
-    logo: "/images/skills/bootstrap.png",
-    name: "Bootstrap",
-    link: "https://react-bootstrap.github.io/getting-started/introduction/",
-  },
-  {
-    logo: "/images/skills/logo.png",
-    name: "Material UI",
-    link: "https://material-ui.com/",
-  },
-  {
-    logo: "/images/skills/react.png",
-    name: "ReactJS",
-    link: "https://reactjs.org/",
-  },
-  {
-    logo: "/images/skills/nextjs.png",
-    name: "NextJS",
-    link: "https://nextjs.org/",
-  },
-  {
-    logo: "/images/skills/redux.png",
-    name: "Redux / Redux-Saga / RTK",
-    link: "https://redux.js.org/",
-  },
-  {
-    logo: "/images/skills/sass.png",
-    name: "Sass",
-    link: "https://sass-lang.com/",
-  },
-  {
-    logo: "/images/skills/node.jpeg",
-    name: "NodeJS",
-    link: "https://nodejs.org/en/docs/",
-  },
-  {
-    logo: "/images/skills/ex.jpg",
-    name: "ExpressJS",
-    link: "https://expressjs.com/",
-  },
-  {
-    logo: "/images/skills/db.png",
-    name: "MongoDB",
-    link: "https://docs.mongodb.com/",
-  },
-  {
-    logo: "/images/skills/sentry.png",
-    name: "Jest / Cypress",
-    link: "https://jestjs.io/",
-  },
-  {
-    logo: "/images/skills/i18.png",
-    name: "i18n / Headless CMS",
-    link: "https://www.i18next.com/",
-  },
+const skillGroups = [
+  ["Frontend", "React.js, Next.js, TypeScript, JavaScript, HTML, CSS, SCSS, Tailwind CSS, Material UI"],
+  ["Architecture", "SSR, SSG, Microfrontends, Headless CMS (AEM/Stencil), i18n, Code splitting, Lazy loading"],
+  ["Quality & performance", "Core Web Vitals, Lighthouse, WCAG accessibility, Jest, React Testing Library, Cypress, TDD"],
+  ["Platform & tooling", "Redux, REST APIs, GraphQL, WebRTC, Git, Webpack, Vite, Rush, Jenkins, CI/CD, AWS, Docker"],
 ];
 
-const Skills = () => {
-  const [element, controls] = useScroll();
-  return (
-    <div id="skills" className="skills-section">
-      <motion.div
-        variants={scrollReveal}
-        ref={element}
-        animate={controls}
-        className="container"
-      >
-        <div className="heading-section">
-          <h1>
-            <span className="chonburi-font green-text">Ski</span>lls
-          </h1>
-        </div>
-        <Row>
-          {skills.map((skill, index) => {
-            return (
-              <Col key={index + 1}>
-                <div className="skills">
-                  <Img
-                    placeholder="/images/skills/lod.jpeg"
-                    src={skill.logo}
-                    error="/images/skills/error.png"
-                    alt="React Cool Img"
-                  />
-                  <a rel="noopener noreferrer" href={skill.link} target="_blank">
-                    {" "}
-                    <h6>{skill.name}</h6>{" "}
-                  </a>
-                </div>
-              </Col>
-            );
-          })}
-        </Row>
-      </motion.div>
+const Skills = () => (
+  <section id="skills" className="skills-section section-space">
+    <div className="container">
+      <div className="section-intro"><p className="eyebrow">Capabilities</p><h2>Built for product teams that care about the long term.</h2></div>
+      <div className="capability-grid">
+        {skillGroups.map(([title, skills]) => <article className="capability-card" key={title}><h3>{title}</h3><p>{skills}</p></article>)}
+      </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default Skills;

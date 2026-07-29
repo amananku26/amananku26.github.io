@@ -1,51 +1,33 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { pageAnimation, titleAnim } from "../../animation";
-import { useScroll } from "./useScroll";
-import { motion } from "framer-motion";
-import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
-import styles from "./styles.module.css"
+import { motion, useReducedMotion } from "framer-motion";
 
-const TransformText = () => {
-    return "</ Building fast, accessible products for the web >"
-}
+const Home = () => {
+  const reduceMotion = useReducedMotion();
+  const reveal = (delay = 0) => reduceMotion ? {} : { initial: { opacity: 0, y: 14 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.65, delay, ease: [0.16, 1, 0.3, 1] } };
 
-const Home = ({countData}) => {
-  const [element, controls] = useScroll();
   return (
-    <div id="home" className="fix  ">
-      <div className="bg-image">
-      
-        <motion.div
-          variants={pageAnimation}
-          ref={element}
-          animate={controls}
-          className="container home-page-intro "
-        >
-          <Row className="home-row">
-            <Col md={8} xs={12}>
-              <motion.div className="intro-section">
-                <motion.h5 variants={titleAnim} className="mb-5">
-                <h6 style={{color:"white"}}>{" Page Count "}<RemoveRedEyeIcon/>{" "}{countData}</h6>
-                <TransformText  /> 
-                </motion.h5>
-                <motion.h1 variants={titleAnim} className="mb-4">
-                  Hi, I'm <span className="chonburi-font green-text">Aman</span>
-                  Anku
-                </motion.h1>
-                <motion.h2 variants={titleAnim} className="mb-4">
-                  <span className="chonburi-font green-text">Senior Frontend Engineer at</span>{" "}
-                  Grid Dynamics
-                </motion.h2>
-                <a href='https://linktr.ee/amananku26' rel="noreferrer" target="_blank"  class="clipped clipped-ltr" className={`${styles.clipped} ${styles.lipped}` }> 👉 Check Link Tree </a>
-              </motion.div>
-            </Col>
-          </Row>
-        </motion.div>
-
-        
+    <section id="home" className="hero-section">
+      <div className="container hero-content">
+        <motion.div {...reveal()} className="hero-topline"><span>Portfolio / 2026</span><span>Bangalore, India</span></motion.div>
+        <div className="hero-main">
+          <div className="hero-copy-block">
+            <motion.p {...reveal(0.07)} className="eyebrow">Aman Anku · Senior Frontend Engineer</motion.p>
+            <motion.h1 {...reveal(0.14)}>I build the frontend behind <em>useful products.</em></motion.h1>
+            <motion.p {...reveal(0.21)} className="hero-copy">I partner with product teams to create fast, accessible, and maintainable web experiences with React, Next.js, and TypeScript.</motion.p>
+            <motion.div {...reveal(0.28)} className="hero-actions">
+              <a className="button button-primary" href="#work">See selected work <span>↓</span></a>
+              <a className="button button-secondary" href="/Aman_Anku_FE_Resume.pdf" target="_blank" rel="noreferrer">Download résumé</a>
+            </motion.div>
+            <motion.div {...reveal(0.35)} className="hero-meta"><span className="availability"><i />Open to meaningful product conversations</span><span>5+ years of frontend engineering</span></motion.div>
+          </div>
+          <motion.aside {...reveal(0.18)} className="portrait-column">
+            <div className="portrait-label"><span>01</span><span>About Aman</span></div>
+            <div className="portrait-ring"><img src="/images/IMG_1480.PNG" alt="Aman Anku" /></div>
+            <div className="portrait-caption"><strong>Aman Anku</strong><span>Senior Frontend Engineer</span></div>
+          </motion.aside>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -7,7 +7,9 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../Footer";
 import Skills from "./Skills";
-import SocialProfiles from "./Social_profiles";
+import Now from "./Now";
+import Elsewhere from "./Elsewhere";
+import Experience from "./Experience";
 
 const HomePage = ({countData}) => {
   return (
@@ -15,10 +17,12 @@ const HomePage = ({countData}) => {
       <NavPart />
       <Home countData={countData}/>
       <About />
-      <Skills />
       <Projects />
+      <Experience />
+      <Skills />
+      <Now />
+      <Elsewhere />
       {/* <GitHub/> */}
-      <SocialProfiles/>
       <Contact />
       <Footer />
     </div>
