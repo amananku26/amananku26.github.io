@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const recommendations = [
   { quote: "Aman consistently impressed me with his speed, attention to detail, and ability to bring a fresh perspective into every product discussion.", name: "Demen Sanjaya Putra Harefa", role: "Co-Founder & CPO at JOIN" },
@@ -28,7 +28,7 @@ const Recommendations = () => {
 
   return (
     <aside className="recommendation-card" aria-label="LinkedIn recommendations" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
-      <div className="recommendation-topline"><div className="recommendation-source"><span className="linkedin-mark" aria-label="LinkedIn"><LinkedInIcon /></span><p className="eyebrow">LinkedIn recommendations</p></div><span>{String(activeIndex + 1).padStart(2, "0")} / {String(recommendations.length).padStart(2, "0")}</span></div>
+      <div className="recommendation-topline"><div className="recommendation-source"><span className="linkedin-mark" aria-label="LinkedIn"><FaLinkedinIn /></span><p className="eyebrow">LinkedIn recommendations</p></div><span>{String(activeIndex + 1).padStart(2, "0")} / {String(recommendations.length).padStart(2, "0")}</span></div>
       <div className="recommendation-content" aria-live="polite"><blockquote>“{activeRecommendation.quote}”</blockquote><p>— {activeRecommendation.name}<br /><span>{activeRecommendation.role} · LinkedIn recommendation</span></p></div>
       <div className="recommendation-controls">
         <button type="button" onClick={() => select(activeIndex - 1)} aria-label="Show previous recommendation">←</button>
