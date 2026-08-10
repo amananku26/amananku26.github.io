@@ -4644,11 +4644,6 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
-feeder-react-feedback@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/feeder-react-feedback/-/feeder-react-feedback-0.0.6.tgz"
-  integrity sha512-BdilgLncuOdoFFC0Da3wYMIYODSxZaH3vUS4662QUTzKOGrGrc63yDywRFw2x4b30Kie3kwD4z3rXcaTznq7Mg==
-
 file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-6.0.1.tgz"
@@ -5395,16 +5390,6 @@ internal-slot@^1.0.5:
     get-intrinsic "^1.2.2"
     hasown "^2.0.0"
     side-channel "^1.0.4"
-
-intro.js-react@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/intro.js-react/-/intro.js-react-0.3.0.tgz"
-  integrity sha512-9rIAZ4k1eh2J06XNWIg43RnG1GmFuCtpnTpf0u4lGW7X4ARh+ZjDVh/r2P8SO45+QOhYi45hy+ql2ASLOe6HoA==
-
-intro.js@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/intro.js/-/intro.js-3.4.0.tgz"
-  integrity sha512-LlOM5izNtkPEtjusCYDZs6Nt9JrykpUuqWh5bfQJtWVMWtg2vGzxzJDGrTdF9XUzVZvWzVIdkga/M/z8AX6hlg==
 
 invariant@^2.2.4:
   version "2.2.4"
