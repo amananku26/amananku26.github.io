@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Contact = () => (
-  <section id="contact" className="contact-section section-space">
-    <div className="container contact-card">
-      <p className="eyebrow">Let’s connect</p>
-      <h2>Have a complex frontend problem worth solving?</h2>
-      <p>I’m always glad to talk about product engineering, frontend architecture, and opportunities to build something meaningful.</p>
-      <div className="contact-actions"><a className="button button-primary" href="mailto:amankumaranku@gmail.com">amankumaranku@gmail.com</a><a className="text-link" href="https://www.linkedin.com/in/amananku26/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
-    </div>
-  </section>
-);
+const Contact = () => {
+  const [isTransmitting, setIsTransmitting] = useState(false);
+  const transmit = (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const subject = encodeURIComponent(`Portfolio transmission from ${form.get("name") || "a visitor"}`);
+    const message = encodeURIComponent(String(form.get("message") || "").trim());
+    setIsTransmitting(true);
+    window.setTimeout(() => {
+      window.location.href = `mailto:amankumaranku@gmail.com?subject=${subject}&body=${message}`;
+      setIsTransmitting(false);
+    }, 520);
+  };
+  return (
+    <section id="contact" className="contact-section section-space">
+      <div className="container contact-card">
+        <div className="contact-intro"><p className="eyebrow">Open channel / secure comms</p><h2>Have a complex frontend problem worth solving?</h2><p>For product engineering, frontend architecture, and senior frontend opportunities. The channel is open.</p><a className="text-link" href="https://www.linkedin.com/in/amananku26/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
+        <form className={`comms-panel ${isTransmitting ? "is-transmitting" : ""}`} onSubmit={transmit}>
+          <div className="comms-header"><span>COMMS//OUTBOUND</span><span>{isTransmitting ? "TRANSMITTING" : "READY"}</span></div>
+          <label>IDENTIFIER<input name="name" autoComplete="name" placeholder="Your name" /></label>
+          <label>MESSAGE<textarea name="message" required rows="4" placeholder="What would you like to build?" /></label>
+          <button className="button button-primary" type="submit">Transmit message <span>→</span></button>
+          <div className="signal-wave" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></div>
+        </form>
+      </div>
+    </section>
+  );
+};
 
 export default Contact;

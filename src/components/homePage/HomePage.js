@@ -11,18 +11,17 @@ import Now from "./Now";
 import Elsewhere from "./Elsewhere";
 import Experience from "./Experience";
 
-const HomePage = ({countData}) => {
+const HomePage = ({ recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal }) => {
   return (
     <div>
-      <NavPart />
-      <Home countData={countData}/>
+      <NavPart recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} />
+      <Home />
       <About />
-      <Projects />
+      <Projects onSignal={onSignal} />
       <Experience />
       <Skills />
       <Now />
       <Elsewhere />
-      {/* <GitHub/> */}
       <Contact />
       <Footer />
     </div>

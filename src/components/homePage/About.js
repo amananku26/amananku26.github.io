@@ -5,18 +5,18 @@ const About = () => (
   <section id="about" className="about-section section-space">
     <div className="container">
       <div className="section-intro two-column-intro">
-        <p className="eyebrow">About me</p>
+        <p className="eyebrow">Transmission log / 2026.08.07</p>
         <div>
-          <h2>I turn complex product requirements into calm, reliable interfaces.</h2>
-          <p>I care about the details users notice: speed, clarity, accessibility, and a system that helps teams ship confidently long after launch.</p>
+          <h2>Complex product requirements, resolved into calm and reliable interfaces.</h2>
+          <p>Focus areas: speed, clarity, accessibility, and frontend systems that keep delivering after the initial launch.</p>
         </div>
       </div>
       <div className="story-grid">
         <article className="story-card">
-          <p className="eyebrow">My story</p>
-          <h3>From learning fast to building systems that help others move faster.</h3>
-          <p>I started my career at Nextory as an Associate Software Engineer, where I learned to take ownership of unfamiliar problems, communicate clearly, and keep raising the quality bar. That curiosity has carried me from product features to scalable frontend architecture.</p>
-          <p>Today, I enjoy the messy part of product engineering: turning an open-ended idea into an interface that is clear for users and dependable for the teams who maintain it.</p>
+          <p className="eyebrow">Log entry / origin</p>
+          <h3>From unfamiliar problems to systems that help teams move faster.</h3>
+          <p>My career started at Nextory, where I learned to take ownership of unknown problems, communicate the trade-offs, and raise the quality bar. That curiosity carried from individual product features into scalable frontend architecture.</p>
+          <p>Current operating principle: turn open-ended ideas into interfaces that are clear for users and dependable for the teams who maintain them.</p>
         </article>
         <Recommendations />
       </div>
