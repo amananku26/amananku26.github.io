@@ -5,7 +5,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "feeder-react-feedback": "0.0.6",
     "framer-motion": "^3.3.0",
     "intro.js": "^3.4.0",
     "intro.js-react": "^0.3.0",

@@ -4644,11 +4644,6 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
-feeder-react-feedback@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/feeder-react-feedback/-/feeder-react-feedback-0.0.6.tgz"
-  integrity sha512-BdilgLncuOdoFFC0Da3wYMIYODSxZaH3vUS4662QUTzKOGrGrc63yDywRFw2x4b30Kie3kwD4z3rXcaTznq7Mg==
-
 file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-6.0.1.tgz"
