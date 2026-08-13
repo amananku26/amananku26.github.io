@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const projects = [
   { number: "MSN-01", title: "Job recruitment platform", company: "Pintar", stack: "Next.js · React · TypeScript · Redux · REST APIs · i18n", objective: "Make a job marketplace fast and maintainable for both job seekers and employers.", description: "Contributed to the reusable design system, microfrontend architecture, and high-performance SSR/SSG user flows.", impact: "Thousands of daily active users · ~60% faster content publishing" },
@@ -7,6 +8,7 @@ const projects = [
 
 const Projects = ({ onSignal }) => {
   const [openMission, setOpenMission] = useState(null);
+  const reduceMotion = useReducedMotion();
   return (
     <section id="work" className="work-section section-space">
       <div className="container">
@@ -18,12 +20,12 @@ const Projects = ({ onSignal }) => {
               setOpenMission(isOpen ? null : project.number);
               onSignal();
             };
-            return <article className={`case-study ${isOpen ? "is-open" : ""}`} key={project.number}>
+            return <motion.article layout={!reduceMotion} whileHover={reduceMotion ? undefined : { y: -5, transition: { duration: .28 } }} className={`case-study ${isOpen ? "is-open" : ""}`} key={project.number}>
               <div className="case-number">{project.number}</div>
               <div className="case-body"><p className="case-company">Operator: {project.company}</p><h3>{project.title}</h3><p className="case-objective"><span>Objective</span>{project.objective}</p><p className="case-description">{project.description}</p><p className="case-stack"><span>Payload</span>{project.stack}</p></div>
               <div className="case-outcome"><p className="case-impact"><span>Result</span>{project.impact}</p><button type="button" className="mission-toggle" aria-expanded={isOpen} onClick={toggleMission}>{isOpen ? "Close data" : "Read mission data"}<b>{isOpen ? "−" : "+"}</b></button></div>
-              {isOpen && <div className="mission-detail" aria-live="polite"><span>SYS//READOUT</span><p>Architecture and delivery choices were guided by a single constraint: preserve a clear, accessible experience while the platform scales across content, teams, and locales.</p></div>}
-            </article>;
+              <AnimatePresence initial={false}>{isOpen && <motion.div className="mission-detail" aria-live="polite" initial={reduceMotion ? false : { opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={reduceMotion ? undefined : { opacity: 0, height: 0 }} transition={{ duration: .32, ease: [0.16, 1, 0.3, 1] }}><span>SYS//READOUT</span><p>Architecture and delivery choices were guided by a single constraint: preserve a clear, accessible experience while the platform scales across content, teams, and locales.</p></motion.div>}</AnimatePresence>
+            </motion.article>;
           })}
         </div>
       </div>

@@ -18,6 +18,19 @@ const App = () => {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
   useEffect(() => () => window.clearTimeout(themeTimer.current), []);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
+    const elements = Array.from(document.querySelectorAll(".section-intro, .story-card, .recommendation-card, .case-study, .timeline-item, .capability-card, .now-layout > *, .elsewhere-layout > *, .contact-card > *"));
+    elements.forEach((element, index) => {
+      element.classList.add("motion-reveal");
+      element.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 85}ms`);
+    });
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
 
   const toggleSound = async () => {
     if (!audioContext.current) audioContext.current = new (window.AudioContext || window.webkitAudioContext)();
