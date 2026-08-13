@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./components/homePage/HomePage";
-import MissionControl from "./components/MissionControl";
 import CommandPalette from "./components/CommandPalette";
 
 const App = () => {
@@ -49,7 +48,6 @@ const App = () => {
 
   return (
     <div className={`App theme-${theme} ${recruiterMode ? "recruiter-mode" : ""}`}>
-      <MissionControl />
       <CommandPalette />
       <HomePage recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} onSignal={playSignal} />
       <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} aria-hidden="true"><i /><i /><i /></div>
