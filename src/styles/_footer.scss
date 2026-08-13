@@ -1,5 +1,1 @@
-.site-footer { background: #070909; border-top: 1px solid var(--line); color: var(--muted); font-family: "IBM Plex Mono", monospace !important; font-size: .62rem; letter-spacing: .05em; padding: 1.4rem 0; position: relative; text-transform: uppercase; }
-.site-footer .container { align-items: center; display: flex; justify-content: space-between; gap: 1rem; }
-.site-footer a { color: var(--ink); margin-left: 1.2rem; text-decoration: none; }
-.site-footer a:hover { color: var(--accent); }
-@media (max-width: 575px) { .site-footer .container { align-items: flex-start; flex-direction: column; } .site-footer a { margin: 0 1rem 0 0; } }
+.site-footer { background: #f5f5f7; color: #6e6e73; font-size: .76rem; padding: 1.5rem 0; }.site-footer .container { align-items: center; display: flex; gap: 1rem; justify-content: space-between; }.site-footer a { color: #424245; margin-left: 1.1rem; text-decoration: none; }.site-footer a:hover { color: #0066cc; }@media(max-width:575px){.site-footer .container{align-items:flex-start;flex-direction:column}.site-footer a{margin:0 1rem 0 0}}
