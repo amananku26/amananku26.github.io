@@ -4,21 +4,42 @@ import CommandPalette from "./components/CommandPalette";
 // Layout component: provides the app-level state (theme, sound, recruiterMode) and injects
 // those props into the page component(s) rendered as its children.
 const Layout = ({ children }) => {
-  const [recruiterMode, setRecruiterMode] = useState(() => (typeof window !== "undefined") && localStorage.getItem("portfolio-recruiter-mode") === "true");
+  // Start with server-consistent defaults. Hydration mismatches occur when
+  // initial client state differs from server-rendered markup. Defer reading
+  // from localStorage until after mount, then update state.
+  const [recruiterMode, setRecruiterMode] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(false);
-  const [theme, setTheme] = useState(() => (typeof window !== "undefined") ? localStorage.getItem("portfolio-theme") || "dark" : "dark");
+  const [theme, setTheme] = useState("dark");
   const [isThemeTransitioning, setIsThemeTransitioning] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const audioContext = useRef(null);
   const themeTimer = useRef(null);
 
+  // On mount, read persisted preferences and apply them. This avoids
+  // server/client markup mismatch during hydration.
   useEffect(() => {
     if (typeof window === "undefined") return;
-    localStorage.setItem("portfolio-recruiter-mode", String(recruiterMode));
+    setMounted(true);
+    try {
+      const savedRecruiter = localStorage.getItem("portfolio-recruiter-mode");
+      setRecruiterMode(savedRecruiter === "true");
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      if (savedTheme) setTheme(savedTheme);
+      document.documentElement.dataset.theme = savedTheme || "dark";
+    } catch (err) {
+      // ignore localStorage read errors
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    // Persist recruiter mode when it changes (only relevant on client).
+    try { localStorage.setItem("portfolio-recruiter-mode", String(recruiterMode)); } catch (e) {}
   }, [recruiterMode]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    localStorage.setItem("portfolio-theme", theme);
+    try { localStorage.setItem("portfolio-theme", theme); } catch (e) {}
     document.documentElement.dataset.theme = theme;
   }, [theme]);
 
@@ -76,7 +97,7 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className={`App theme-${theme} ${recruiterMode ? "recruiter-mode" : ""}`}>
+    <div className={`App theme-${theme} ${mounted && recruiterMode ? "recruiter-mode" : ""}`}>
       <CommandPalette />
       {React.Children.map(children, renderChildWithProps)}
       <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} aria-hidden="true"><i /><i /><i /></div>
