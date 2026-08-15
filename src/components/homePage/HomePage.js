@@ -14,18 +14,20 @@ const Footer = dynamic(() => import('../Footer'));
 
 const HomePage = ({ recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal }) => {
   return (
-    <div>
+    <>
       <NavPart recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} />
-      <Home />
-      <About />
-      <Projects onSignal={onSignal} />
-      <Experience />
-      <Skills />
-      <Now />
-      <Elsewhere />
-      <Contact />
+      <main id="main-content">
+        <Home />
+        <About />
+        <Projects onSignal={onSignal} />
+        <Experience />
+        <Skills />
+        <Now />
+        <Elsewhere />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

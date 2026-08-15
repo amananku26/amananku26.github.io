@@ -53,7 +53,7 @@ const CommandPalette = () => {
         <div className="command-palette" onMouseDown={(event) => event.stopPropagation()}>
           <div className="command-heading"><span>COMMAND//NAVIGATION</span><button type="button" onClick={() => setIsOpen(false)} aria-label="Close command palette">ESC</button></div>
           <p>SELECT AN AVAILABLE ACTION</p>
-          <div className="command-list">{commands.map((command) => <button type="button" key={command.key} onClick={() => runCommand(command)}><kbd>{command.key}</kbd><span><strong>{command.label}</strong><small>{command.detail}</small></span><b>→</b></button>)}</div>
+          <div className="command-list">{commands.map((command) => <button type="button" key={command.key} onClick={() => runCommand(command)} aria-label={`Command ${command.label}`}><kbd>{command.key}</kbd><span><strong>{command.label}</strong><small>{command.detail}</small></span><b>→</b></button>)}</div>
         </div>
       </div>}
     </>

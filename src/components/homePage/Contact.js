@@ -19,8 +19,10 @@ const Contact = () => {
         <div className="contact-intro"><p className="eyebrow">Open channel / secure comms</p><h2>Have a complex frontend problem worth solving?</h2><p>For product engineering, frontend architecture, and senior frontend opportunities. The channel is open.</p><a className="text-link" href="https://www.linkedin.com/in/amananku26/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
         <form className={`comms-panel ${isTransmitting ? "is-transmitting" : ""}`} onSubmit={transmit}>
           <div className="comms-header"><span>COMMS//OUTBOUND</span><span>{isTransmitting ? "TRANSMITTING" : "READY"}</span></div>
-          <label>IDENTIFIER<input name="name" autoComplete="name" placeholder="Your name" /></label>
-          <label>MESSAGE<textarea name="message" required rows="4" placeholder="What would you like to build?" /></label>
+          <label htmlFor="contact-name">IDENTIFIER</label>
+          <input id="contact-name" name="name" autoComplete="name" placeholder="Your name" />
+          <label htmlFor="contact-message">MESSAGE</label>
+          <textarea id="contact-message" name="message" required rows="4" placeholder="What would you like to build?" />
           <button className="button button-primary" type="submit">Transmit message <span>→</span></button>
           <div className="signal-wave" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></div>
         </form>

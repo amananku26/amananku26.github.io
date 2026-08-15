@@ -12,7 +12,7 @@ const Skills = () => (
     <div className="container">
       <div className="section-intro"><p className="eyebrow">Systems / instrumentation</p><h2>Capabilities calibrated for product teams that plan beyond launch.</h2></div>
       <div className="capability-grid">
-        {skillGroups.map(([title, skills, signal], index) => <article className="capability-card" key={title}><div className="capability-heading"><h3>SYS-{String(index + 1).padStart(2, "0")} / {title}</h3><span>{signal}% SIGNAL</span></div><div className="signal-meter" aria-label={`${title} signal strength ${signal}%`}><i style={{ width: `${signal}%` }} /></div><p>{skills}</p></article>)}
+        {skillGroups.map(([title, skills, signal], index) => <article className="capability-card" key={title}><div className="capability-heading"><h3>SYS-{String(index + 1).padStart(2, "0")} / {title}</h3><span>{signal}% SIGNAL</span></div><div className="signal-meter" role="meter" aria-valuenow={signal} aria-valuemin={0} aria-valuemax={100} aria-label={`${title} signal strength ${signal}%`}><i style={{ width: `${signal}%` }} /></div><p>{skills}</p></article>)}
       </div>
     </div>
   </section>

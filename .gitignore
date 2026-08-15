@@ -5,11 +5,18 @@
 /.pnp
 .pnp.js
 
-# testing
+# testing & audit reports
 /coverage
+lighthouse-desktop.json
+lighthouse-mobile.json
+*.log
+debug.log
+.eslintcache
 
-# production
-
+# Next build and export output
+.next/
+/out/
+/build/
 
 # misc
 .DS_Store
@@ -22,9 +29,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Next build output
-.next/
-
 # local feedback storage
 /data/
-

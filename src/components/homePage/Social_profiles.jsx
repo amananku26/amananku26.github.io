@@ -1,10 +1,8 @@
-// import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
-import Img from 'react-cool-img';
 
 const myProjects = [
   {
@@ -43,38 +41,41 @@ const SocialProfiles = () => {
         className="container pt-6 pb-6"
       >
         <div className="heading-section">
-          <h1>
+          <h2>
             <span className="chonburi-font green-text">Achieve</span>ment
-          </h1>
+          </h2>
         </div>
         <div className="projects-cards">
           <Row className="justify-content-center">
-            {myProjects.map((project,index) => {
+            {myProjects.map((project, index) => {
               return (
-                <Col md={4} className="mb-5" key={index+1}>
+                <Col md={4} className="mb-5" key={project.title}>
                   <div className="project-card1">
                     <div className="img-section">
-                    <Img
-                      placeholder="/images/Loading.mp4"
-                      src={project.image}
-                       error="/images/download.png"
-                       alt="React Cool Img"
-                       className='fixImageDynamic'
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        loading="lazy"
+                        decoding="async"
+                        width={400}
+                        height={250}
+                        className='fixImageDynamic'
                       />
                       <div className="imageCardEffect"></div>
                     </div>
                     <div className="project-info1">
-                      <h5 className="color-white font-weight-bold">
+                      <h3 className="color-white font-weight-bold" style={{ fontSize: '1.1rem' }}>
                         {project.title}
-                      </h5>
+                      </h3>
                       <p className="color-white">{project.dLink}</p>
-                     {project.demoLink && <div className="d-flex justify-content-between mr-4">
+                      {project.demoLink && <div className="d-flex justify-content-between mr-4">
                         <a rel="noopener noreferrer"
                           href={project.demoLink}
                           className="project-card-btn"
                           target="_blank"
+                          aria-label={`Read story about ${project.title}`}
                         >
-                          Read ...
+                          Read story ↗
                         </a>
                       </div>}
                     </div>
