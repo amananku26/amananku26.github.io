@@ -1,14 +1,16 @@
 import React from "react";
+import dynamic from 'next/dynamic';
 import NavPart from "../NavPart";
 import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Footer from "../Footer";
-import Skills from "./Skills";
-import Now from "./Now";
-import Elsewhere from "./Elsewhere";
-import Experience from "./Experience";
+
+const About = dynamic(() => import('./About'));
+const Projects = dynamic(() => import('./Projects'));
+const Experience = dynamic(() => import('./Experience'));
+const Skills = dynamic(() => import('./Skills'));
+const Now = dynamic(() => import('./Now'));
+const Elsewhere = dynamic(() => import('./Elsewhere'));
+const Contact = dynamic(() => import('./Contact'));
+const Footer = dynamic(() => import('../Footer'));
 
 const HomePage = ({ recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal }) => {
   return (
