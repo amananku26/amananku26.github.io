@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
 
 const Home = () => {
@@ -40,7 +41,9 @@ const Home = () => {
           </div>
           <motion.aside {...reveal(0.18)} className="portrait-column" style={reduceMotion ? undefined : { rotateX, rotateY, transformPerspective: 900 }}>
             <div className="portrait-label"><span>Introducing</span><span>Frontend engineer</span></div>
-            <div className="portrait-ring"><img src="/images/IMG_1480.PNG" alt="Aman Anku" /></div>
+            <div className="portrait-ring">
+              <Image src="/images/IMG_1480.webp" alt="Aman Anku" width={320} height={390} priority sizes="(max-width: 768px) 260px, 320px" />
+            </div>
             <div className="portrait-caption"><strong>Aman Anku</strong><span>Senior frontend engineer</span></div>
           </motion.aside>
         </div>
