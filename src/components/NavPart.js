@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import "../styles/_nav.scss";
 
 const NavPart = ({ recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme }) => (
   <header className="site-header">

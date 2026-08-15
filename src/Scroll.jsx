@@ -1,29 +1,37 @@
-import React, {useState} from 'react';
-import {FaArrowCircleUp} from 'react-icons/fa';
-import './scroll.css';
+import React, { useState, useEffect } from 'react';
+import { FaArrowCircleUp } from 'react-icons/fa';
+import styles from './scroll.module.css';
 
+const ScrollArrow = () => {
+  const [showScroll, setShowScroll] = useState(false);
 
-const ScrollArrow = () =>{
+  useEffect(() => {
+    const checkScrollTop = () => {
+      setShowScroll(window.pageYOffset > 400);
+    };
 
-  const [showScroll, setShowScroll] = useState(false)
+    if (typeof window === 'undefined') return undefined;
 
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400){
-      setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 400){
-      setShowScroll(false)
-    }
+    window.addEventListener('scroll', checkScrollTop, { passive: true });
+    checkScrollTop();
+
+    return () => {
+      window.removeEventListener('scroll', checkScrollTop);
+    };
+  }, []);
+
+  const scrollTop = () => {
+    if (typeof window === 'undefined') return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const scrollTop = () =>{
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  };
-
-  window.addEventListener('scroll', checkScrollTop)
 
   return (
-        <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
+    <FaArrowCircleUp
+      className={styles.scrollTop}
+      onClick={scrollTop}
+      style={{ height: 40, display: showScroll ? 'flex' : 'none' }}
+    />
   );
-}
+};
 
 export default ScrollArrow;

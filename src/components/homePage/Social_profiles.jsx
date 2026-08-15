@@ -1,6 +1,6 @@
 // import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "./useScroll";
@@ -27,10 +27,17 @@ const myProjects = [
 
 const SocialProfiles = () => {
   const [element, controls] = useScroll();
+  const [useVariants, setUseVariants] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    setUseVariants(window.innerWidth > 767);
+  }, []);
+
   return (
     <div className="projects1" id="projects">
       <motion.div
-        variants={window.innerWidth > 767 ? scrollReveal : null}
+        variants={useVariants ? scrollReveal : null}
         ref={element}
         animate={controls}
         className="container pt-6 pb-6"

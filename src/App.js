@@ -1,24 +1,31 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import HomePage from "./components/homePage/HomePage";
 import CommandPalette from "./components/CommandPalette";
 
-const App = () => {
-  const [recruiterMode, setRecruiterMode] = useState(() => localStorage.getItem("portfolio-recruiter-mode") === "true");
+// Layout component: provides the app-level state (theme, sound, recruiterMode) and injects
+// those props into the page component(s) rendered as its children.
+const Layout = ({ children }) => {
+  const [recruiterMode, setRecruiterMode] = useState(() => (typeof window !== "undefined") && localStorage.getItem("portfolio-recruiter-mode") === "true");
   const [soundEnabled, setSoundEnabled] = useState(false);
-  const [theme, setTheme] = useState(() => localStorage.getItem("portfolio-theme") || "dark");
+  const [theme, setTheme] = useState(() => (typeof window !== "undefined") ? localStorage.getItem("portfolio-theme") || "dark" : "dark");
   const [isThemeTransitioning, setIsThemeTransitioning] = useState(false);
   const audioContext = useRef(null);
   const themeTimer = useRef(null);
 
-  useEffect(() => localStorage.setItem("portfolio-recruiter-mode", String(recruiterMode)), [recruiterMode]);
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    localStorage.setItem("portfolio-recruiter-mode", String(recruiterMode));
+  }, [recruiterMode]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
     localStorage.setItem("portfolio-theme", theme);
     document.documentElement.dataset.theme = theme;
   }, [theme]);
+
   useEffect(() => () => window.clearTimeout(themeTimer.current), []);
+
   useEffect(() => {
+    if (typeof window === "undefined") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
     const elements = Array.from(document.querySelectorAll(".section-intro, .story-card, .recommendation-card, .case-study, .timeline-item, .capability-card, .now-layout > *, .elsewhere-layout > *, .contact-card > *"));
     elements.forEach((element, index) => {
@@ -33,6 +40,7 @@ const App = () => {
   }, []);
 
   const toggleSound = async () => {
+    if (typeof window === "undefined") return;
     if (!audioContext.current) audioContext.current = new (window.AudioContext || window.webkitAudioContext)();
     const context = audioContext.current;
 
@@ -53,19 +61,27 @@ const App = () => {
     oscillator.stop(context.currentTime + .14);
   };
   const toggleTheme = () => {
+    if (typeof window === "undefined") return;
     window.clearTimeout(themeTimer.current);
     setIsThemeTransitioning(true);
     setTheme((currentTheme) => currentTheme === "dark" ? "light" : "dark");
     themeTimer.current = window.setTimeout(() => setIsThemeTransitioning(false), 1100);
   };
 
+  const renderChildWithProps = (child) => {
+    if (React.isValidElement(child)) {
+      return React.cloneElement(child, { recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal: playSignal });
+    }
+    return child;
+  };
+
   return (
     <div className={`App theme-${theme} ${recruiterMode ? "recruiter-mode" : ""}`}>
       <CommandPalette />
-      <HomePage recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} onSignal={playSignal} />
+      {React.Children.map(children, renderChildWithProps)}
       <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} aria-hidden="true"><i /><i /><i /></div>
     </div>
   );
 };
 
-export default App;
+export default Layout;
