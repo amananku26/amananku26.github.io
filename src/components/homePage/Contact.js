@@ -24,7 +24,7 @@ const Contact = () => {
           <label htmlFor="contact-message">MESSAGE</label>
           <textarea id="contact-message" name="message" required rows="4" placeholder="What would you like to build?" />
           <button className="button button-primary" type="submit">Transmit message <span>→</span></button>
-          <div className="signal-wave" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></div>
+          <div className="signal-wave" role="presentation" aria-hidden="true"><i /><i /><i /><i /><i /><i /><i /></div>
         </form>
       </div>
     </section>

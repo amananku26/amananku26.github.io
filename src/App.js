@@ -100,7 +100,7 @@ const Layout = ({ children }) => {
     <div className={`App theme-${theme} ${mounted && recruiterMode ? "recruiter-mode" : ""}`}>
       <CommandPalette />
       {React.Children.map(children, renderChildWithProps)}
-      <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} aria-hidden="true"><i /><i /><i /></div>
+      <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} role="presentation" aria-hidden="true"><i /><i /><i /></div>
     </div>
   );
 };

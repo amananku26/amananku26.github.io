@@ -2,21 +2,25 @@ import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
 
-const Home = () => {
-  const reduceMotion = useReducedMotion();
+const Clock = () => {
   const [clock, setClock] = useState("--:--:--");
-  const pointerX = useMotionValue(0);
-  const pointerY = useMotionValue(0);
-  const springX = useSpring(pointerX, { stiffness: 65, damping: 18 });
-  const springY = useSpring(pointerY, { stiffness: 65, damping: 18 });
-  const rotateY = useTransform(springX, [-.5, .5], [-5, 5]);
-  const rotateX = useTransform(springY, [-.5, .5], [4, -4]);
   useEffect(() => {
     const updateClock = () => setClock(new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false, timeZone: "UTC" }).format(new Date()));
     updateClock();
     const timer = window.setInterval(updateClock, 1000);
     return () => window.clearInterval(timer);
   }, []);
+  return <span>{clock} UTC</span>;
+};
+
+const Home = () => {
+  const reduceMotion = useReducedMotion();
+  const pointerX = useMotionValue(0);
+  const pointerY = useMotionValue(0);
+  const springX = useSpring(pointerX, { stiffness: 65, damping: 18 });
+  const springY = useSpring(pointerY, { stiffness: 65, damping: 18 });
+  const rotateY = useTransform(springX, [-.5, .5], [-5, 5]);
+  const rotateX = useTransform(springY, [-.5, .5], [4, -4]);
   const reveal = (delay = 0) => reduceMotion ? {} : { initial: { opacity: 1, y: 0 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.65, delay, ease: [0.16, 1, 0.3, 1] } };
 
   return (
@@ -37,7 +41,7 @@ const Home = () => {
               <a className="button button-primary" href="#work">Explore selected work <span>↓</span></a>
               <a className="button button-secondary" href="/Aman_Anku_FE_Resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
             </div>
-            <div className="hero-meta"><span className="availability"><i />Open to product engineering roles</span><span>5+ years experience</span><span>{clock} UTC</span></div>
+            <div className="hero-meta"><span className="availability"><i />Open to product engineering roles</span><span>5+ years experience</span><Clock /></div>
           </div>
           <aside className="portrait-column" style={reduceMotion ? undefined : { rotateX, rotateY, transformPerspective: 900 }}>
             <div className="portrait-label"><span>Introducing</span><span>Frontend engineer</span></div>

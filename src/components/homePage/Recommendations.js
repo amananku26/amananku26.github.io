@@ -28,11 +28,11 @@ const Recommendations = () => {
 
   return (
     <aside className="recommendation-card" aria-label="LinkedIn recommendations" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
-      <div className="recommendation-topline"><div className="recommendation-source"><span className="linkedin-mark" role="img" aria-label="LinkedIn"><FaLinkedinIn /></span><p className="eyebrow">LinkedIn recommendations</p></div><span>{String(activeIndex + 1).padStart(2, "0")} / {String(recommendations.length).padStart(2, "0")}</span></div>
+      <div className="recommendation-topline"><div className="recommendation-source"><span className="linkedin-mark" role="img" aria-hidden="true"><FaLinkedinIn /></span><p className="eyebrow">LinkedIn recommendations</p></div><span>{String(activeIndex + 1).padStart(2, "0")} / {String(recommendations.length).padStart(2, "0")}</span></div>
       <div className="recommendation-content" aria-live="polite"><blockquote>“{activeRecommendation.quote}”</blockquote><p>— {activeRecommendation.name}<br /><span>{activeRecommendation.role} · LinkedIn recommendation</span></p></div>
       <div className="recommendation-controls">
         <button type="button" onClick={() => select(activeIndex - 1)} aria-label="Show previous recommendation">←</button>
-        <div className="recommendation-dots" aria-label="Choose a recommendation">{recommendations.map((item, index) => <button type="button" key={item.name} onClick={() => select(index)} className={index === activeIndex ? "active" : ""} aria-label={`Show recommendation from ${item.name}`} aria-current={index === activeIndex ? "true" : undefined} />)}</div>
+        <div className="recommendation-dots" role="group" aria-label="Choose a recommendation">{recommendations.map((item, index) => <button type="button" key={item.name} onClick={() => select(index)} className={index === activeIndex ? "active" : ""} aria-label={`Show recommendation from ${item.name}`} aria-current={index === activeIndex ? "true" : undefined} />)}</div>
         <button type="button" onClick={() => select(activeIndex + 1)} aria-label="Show next recommendation">→</button>
       </div>
     </aside>
