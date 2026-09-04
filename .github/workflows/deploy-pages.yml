@@ -30,6 +30,9 @@ jobs:
           node-version: 24
           cache: npm
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: npm ci
 
@@ -39,7 +42,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: build
+          path: out
 
   deploy:
     if: github.event_name != 'pull_request'
