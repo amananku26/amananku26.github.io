@@ -62,7 +62,7 @@ const SkillIcon = ({ icon: Icon, label }) => typeof Icon === "string"
   ? <span className={`skill-monogram skill-monogram-${label.toLowerCase().replace(/\s+/g, "-")}`} aria-hidden="true">{Icon}</span>
   : <Icon aria-hidden="true" />;
 
-const Skills = () => (
+const Skills = ({ xrayMode }) => (
   <section id="skills" className="skills-section section-space">
     <div className="container">
       <div className="section-intro skills-intro">
@@ -83,6 +83,7 @@ const Skills = () => (
           </ul>
         </article>)}
       </div>
+      {xrayMode && <aside className="xray-note xray-note-skills" aria-label="Skills implementation notes"><span>02 / TOOLKIT SYSTEM</span><p><b>One content model, three perspectives.</b> Each card is generated from structured data, so the visual system stays consistent as the toolkit grows.</p><p><b>Designed for every input.</b> Cards work with mouse, keyboard focus, and responsive grid breakpoints.</p></aside>}
     </div>
   </section>
 );

@@ -12,16 +12,16 @@ const Elsewhere = dynamic(() => import('./Elsewhere'));
 const Contact = dynamic(() => import('./Contact'));
 const Footer = dynamic(() => import('../Footer'));
 
-const HomePage = ({ recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal }) => {
+const HomePage = ({ recruiterMode, setRecruiterMode, xrayMode, setXrayMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal }) => {
   return (
     <>
-      <NavPart recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} />
+      <NavPart recruiterMode={recruiterMode} setRecruiterMode={setRecruiterMode} xrayMode={xrayMode} setXrayMode={setXrayMode} soundEnabled={soundEnabled} toggleSound={toggleSound} theme={theme} toggleTheme={toggleTheme} />
       <main id="main-content">
-        <Home />
+        <Home xrayMode={xrayMode} setXrayMode={setXrayMode} />
         <About />
         <Projects onSignal={onSignal} />
         <Experience />
-        <Skills />
+        <Skills xrayMode={xrayMode} />
         <Now />
         <Elsewhere />
         <Contact />

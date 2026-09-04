@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
   // initial client state differs from server-rendered markup. Defer reading
   // from localStorage until after mount, then update state.
   const [recruiterMode, setRecruiterMode] = useState(false);
+  const [xrayMode, setXrayMode] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(false);
   const [theme, setTheme] = useState("dark");
   const [isThemeTransitioning, setIsThemeTransitioning] = useState(false);
@@ -91,13 +92,13 @@ const Layout = ({ children }) => {
 
   const renderChildWithProps = (child) => {
     if (React.isValidElement(child)) {
-      return React.cloneElement(child, { recruiterMode, setRecruiterMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal: playSignal });
+      return React.cloneElement(child, { recruiterMode, setRecruiterMode, xrayMode, setXrayMode, soundEnabled, toggleSound, theme, toggleTheme, onSignal: playSignal });
     }
     return child;
   };
 
   return (
-    <div className={`App theme-${theme} ${mounted && recruiterMode ? "recruiter-mode" : ""}`}>
+    <div className={`App theme-${theme} ${mounted && recruiterMode ? "recruiter-mode" : ""} ${xrayMode ? "xray-mode" : ""}`}>
       <CommandPalette />
       {React.Children.map(children, renderChildWithProps)}
       <div className={`theme-transition ${isThemeTransitioning ? "is-active" : ""}`} role="presentation" aria-hidden="true"><i /><i /><i /></div>

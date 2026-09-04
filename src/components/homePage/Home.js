@@ -13,7 +13,7 @@ const Clock = () => {
   return <span>{clock} UTC</span>;
 };
 
-const Home = () => {
+const Home = ({ xrayMode, setXrayMode }) => {
   const reduceMotion = useReducedMotion();
   const pointerX = useMotionValue(0);
   const pointerY = useMotionValue(0);
@@ -41,7 +41,13 @@ const Home = () => {
               <a className="button button-primary" href="#work">Explore selected work <span>↓</span></a>
               <a className="button button-secondary" href="/Aman_Anku_FE_Resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
             </div>
+            <button className="xray-launch" type="button" onClick={() => setXrayMode(!xrayMode)} aria-pressed={xrayMode}>
+              <span className="xray-launch-mark" aria-hidden="true">⌁</span>
+              <span><b>{xrayMode ? "X-Ray mode is on" : "Inspect the build"}</b><small>{xrayMode ? "Implementation notes are visible across the page" : "A technical tour of the portfolio itself"}</small></span>
+              <i aria-hidden="true">{xrayMode ? "×" : "→"}</i>
+            </button>
             <div className="hero-meta"><span className="availability"><i />Open to product engineering roles</span><span>5+ years experience</span><Clock /></div>
+            {xrayMode && <aside className="xray-note xray-note-hero" aria-label="Hero implementation notes"><span>01 / HERO SYSTEM</span><p><b>Motion-safe by design.</b> Cursor movement uses spring physics and automatically yields to the visitor’s reduced-motion setting.</p><p><b>Fast first paint.</b> The portrait is prioritized and served with responsive image dimensions.</p></aside>}
           </div>
           <aside className="portrait-column" style={reduceMotion ? undefined : { rotateX, rotateY, transformPerspective: 900 }}>
             <div className="portrait-label"><span>Introducing</span><span>Frontend engineer</span></div>

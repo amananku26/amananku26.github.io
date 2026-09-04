@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import HomePage from '../src/components/homePage/HomePage';
 
-export default function Page() {
+export default function Page(props) {
   return (
     <>
       <Head>
@@ -17,8 +17,7 @@ export default function Page() {
         <meta name="twitter:title" content="Aman Anku | Senior Frontend Engineer" />
         <meta name="twitter:description" content="Senior Frontend Engineer specializing in React, Next.js, TypeScript, SSR/SSG, and web performance." />
       </Head>
-      <HomePage />
+      <HomePage {...props} />
     </>
   );
 }
-
