@@ -1,1 +1,43 @@
-globalThis.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],lowPriorityFiles:["static/hqybC_u_LPPIxCCgzX98x/_buildManifest.js","static/hqybC_u_LPPIxCCgzX98x/_ssgManifest.js"],rootMainFiles:["static/chunks/webpack-b1c985ccf95f5c30.js","static/chunks/4bd1b696-92152b0f5947070d.js","static/chunks/276-bdec7a8b94518771.js","static/chunks/main-app-09f60fe825c05451.js"],rootMainFilesTree:{},pages:{"/":["static/chunks/webpack-b1c985ccf95f5c30.js","static/chunks/framework-d46cfc3e0bd542b9.js","static/chunks/main-9c7ab4aa066085b0.js","static/chunks/812-465b969d3b1b0c7b.js","static/chunks/pages/index-7babb5caa0644da7.js"],"/_app":["static/chunks/webpack-b1c985ccf95f5c30.js","static/chunks/framework-d46cfc3e0bd542b9.js","static/chunks/main-9c7ab4aa066085b0.js","static/css/e99b8c947d8b88c3.css","static/chunks/pages/_app-371b76a557084c05.js"],"/_error":["static/chunks/webpack-b1c985ccf95f5c30.js","static/chunks/framework-d46cfc3e0bd542b9.js","static/chunks/main-9c7ab4aa066085b0.js","static/chunks/pages/_error-f411f14ffbabb959.js"]}};
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/": [
+      "static/chunks/2moq0t1w4-bjr.js",
+      "static/chunks/1rhvgpzwhxuer.js",
+      "static/chunks/1t4ph9ck-cumb.js",
+      "static/chunks/12yhpg7wyr0cs.js",
+      "static/chunks/turbopack-3phnd5kz4535r.js"
+    ],
+    "/_app": [
+      "static/chunks/0pdpnqm8u3twt.js",
+      "static/chunks/1t4ph9ck-cumb.js",
+      "static/chunks/1rhvgpzwhxuer.js",
+      "static/chunks/2bdgevdxrm_61.css",
+      "static/chunks/151eem0i06kwb.css",
+      "static/chunks/turbopack-0ohadicjf0hwn.js"
+    ],
+    "/_error": [
+      "static/chunks/422ovf-y0ppvq.js",
+      "static/chunks/1t4ph9ck-cumb.js",
+      "static/chunks/1rhvgpzwhxuer.js",
+      "static/chunks/turbopack-2ox5gke_60k7-.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "lowPriorityFiles": [
+    "static/1t7EiJgvwXMwSRfCWajSf/_buildManifest.js",
+    "static/1t7EiJgvwXMwSRfCWajSf/_ssgManifest.js",
+    "static/1t7EiJgvwXMwSRfCWajSf/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/11xj2isrxu0hv.js",
+    "static/chunks/0-w0jbhtblxmd.js",
+    "static/chunks/360t6dh2ihoa8.js",
+    "static/chunks/turbopack-0925q_msg4rc8.js"
+  ],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {},
+  "chunkLoadingGlobal": "TURBOPACK"
+};
