@@ -15,8 +15,8 @@ const About = () => (
         <article className="story-card">
           <p className="eyebrow">Log entry / origin</p>
           <h3>From unfamiliar problems to systems that help teams move faster.</h3>
-          <p>My career started at Nextory, where I learned to take ownership of unknown problems, communicate the trade-offs, and raise the quality bar. That curiosity carried from individual product features into scalable frontend architecture.</p>
-          <p>Current operating principle: turn open-ended ideas into interfaces that are clear for users and dependable for the teams who maintain them.</p>
+          <p>My career started at Nextory, where I learned to take ownership of unknown problems, communicate the tradeoffs, and raise the quality bar. That curiosity carried from individual product features into scalable frontend architecture.</p>
+          <p>Current operating principle: turn open ended ideas into interfaces that are clear for users and dependable for the teams who maintain them.</p>
         </article>
         <Recommendations />
       </div>

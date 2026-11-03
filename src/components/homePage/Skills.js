@@ -22,7 +22,7 @@ const skillGroups = [
     title: "Build the interface",
     signal: 96,
     skills: [
-      ["Next.js", "Production-ready React", SiNextdotjs],
+      ["Next.js", "Production ready React", SiNextdotjs],
       ["React", "Component systems", SiReact],
       ["TypeScript", "Safer frontends", SiTypescript],
       ["Tailwind", "Fast visual iteration", SiTailwindcss],
@@ -35,7 +35,7 @@ const skillGroups = [
     title: "Ship with leverage",
     signal: 91,
     skills: [
-      ["Claude Code", "AI-assisted delivery", "CC"],
+      ["Claude Code", "AI assisted delivery", "CC"],
       ["MCP", "Connected AI workflows", "MCP"],
       ["GraphQL", "Typed data layers", SiGraphql],
       ["Git", "Collaborative delivery", SiGit],
